@@ -1,0 +1,39 @@
+18:09:15.985 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+18:09:16.079 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+18:09:16.079 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+18:09:16.126 [main] INFO  testCases.TC002_ValidateLoginFunctionality - ********** Starting TC002_ValidateLoginFunctionality ************
+18:09:16.126 [main] INFO  testCases.TC002_ValidateLoginFunctionality - ********** Entering username: Admin**********
+18:09:16.251 [main] INFO  testCases.TC002_ValidateLoginFunctionality - ********** Entering password. admin123**********
+18:09:16.410 [main] INFO  testCases.TC002_ValidateLoginFunctionality - ********** Clicking on Login button. **********
+18:09:16.587 [main] INFO  testCases.TC002_ValidateLoginFunctionality - ********** Checking if Dashboard is loaded... **********
+18:09:18.485 [main] INFO  testCases.TC002_ValidateLoginFunctionality - ********** Expected login result: VALID **********
+18:09:18.485 [main] INFO  testCases.TC002_ValidateLoginFunctionality - ********** Login successful for valid credentials. **********
+18:09:20.954 [main] INFO  testCases.TC002_ValidateLoginFunctionality - ********** Logged out successfully. **********
+18:09:20.954 [main] INFO  testCases.TC002_ValidateLoginFunctionality - ********** Finished TC002_ValidateLoginFunctionality ************
+18:09:20.962 [main] INFO  testCases.TC002_ValidateLoginFunctionality - ********** Starting TC002_ValidateLoginFunctionality ************
+18:09:20.970 [main] INFO  testCases.TC002_ValidateLoginFunctionality - ********** Entering username: admin**********
+18:09:21.577 [main] INFO  testCases.TC002_ValidateLoginFunctionality - ********** Entering password. Admin1234**********
+18:09:21.737 [main] INFO  testCases.TC002_ValidateLoginFunctionality - ********** Clicking on Login button. **********
+18:09:21.877 [main] INFO  testCases.TC002_ValidateLoginFunctionality - ********** Checking if Dashboard is loaded... **********
+18:09:33.000 [main] INFO  testCases.TC002_ValidateLoginFunctionality - ********** Expected login result: INVALID **********
+18:09:33.000 [main] INFO  testCases.TC002_ValidateLoginFunctionality - ********** Login failed as expected for invalid credentials. **********
+18:09:33.048 [main] ERROR testCases.TC002_ValidateLoginFunctionality - ********** Checking error message with invalid credentials. **********
+18:09:33.048 [main] INFO  testCases.TC002_ValidateLoginFunctionality - ********** Error message displayed : Invalid credentials **********
+18:09:33.048 [main] INFO  testCases.TC002_ValidateLoginFunctionality - ********** Finished TC002_ValidateLoginFunctionality ************
+18:09:33.063 [main] INFO  testCases.TC002_ValidateLoginFunctionality - ********** Starting TC002_ValidateLoginFunctionality ************
+18:09:33.063 [main] INFO  testCases.TC002_ValidateLoginFunctionality - ********** Entering username: Admin**********
+18:09:33.145 [main] INFO  testCases.TC002_ValidateLoginFunctionality - ********** Entering password. Admin1234**********
+18:09:33.305 [main] INFO  testCases.TC002_ValidateLoginFunctionality - ********** Clicking on Login button. **********
+18:09:34.954 [main] INFO  testCases.TC002_ValidateLoginFunctionality - ********** Checking if Dashboard is loaded... **********
+18:09:45.018 [main] INFO  testCases.TC002_ValidateLoginFunctionality - ********** Expected login result: INVALID **********
+18:09:45.018 [main] INFO  testCases.TC002_ValidateLoginFunctionality - ********** Login failed as expected for invalid credentials. **********
+18:09:45.081 [main] ERROR testCases.TC002_ValidateLoginFunctionality - ********** Checking error message with invalid credentials. **********
+18:09:45.081 [main] INFO  testCases.TC002_ValidateLoginFunctionality - ********** Error message displayed : Invalid credentials **********
+18:09:45.081 [main] INFO  testCases.TC002_ValidateLoginFunctionality - ********** Finished TC002_ValidateLoginFunctionality ************
+18:09:45.094 [main] INFO  testCases.TC002_ValidateLoginFunctionality - ********** Starting TC002_ValidateLoginFunctionality ************
+18:09:45.095 [main] INFO  testCases.TC002_ValidateLoginFunctionality - ********** Entering username: admin**********
+18:09:45.218 [main] INFO  testCases.TC002_ValidateLoginFunctionality - ********** Entering password. admin123**********
+18:09:45.401 [main] INFO  testCases.TC002_ValidateLoginFunctionality - ********** Clicking on Login button. **********
+18:09:45.562 [main] INFO  testCases.TC002_ValidateLoginFunctionality - ********** Checking if Dashboard is loaded... **********
+18:09:47.070 [main] INFO  testCases.TC002_ValidateLoginFunctionality - ********** Expected login result: VALID **********
+18:09:47.070 [main] INFO  testCases.TC002_ValidateLoginFunctionality - ********** Login successful for valid credentials. **********

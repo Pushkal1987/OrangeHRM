@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-02T18:08:58 IST" name="Suite" finished-at="2025-08-02T18:09:51 IST" duration-ms="52333">
+    <groups>
+    </groups>
+    <test started-at="2025-08-02T18:08:58 IST" name="chrometest" finished-at="2025-08-02T18:09:51 IST" duration-ms="52333">
+      <class name="testCases.TC001_ValidateHomePage">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC001_ValidateHomePage@797cf65c]" started-at="2025-08-02T18:08:59 IST" name="setup" finished-at="2025-08-02T18:09:06 IST" duration-ms="7181" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyTitle()[pri:1, instance:testCases.TC001_ValidateHomePage@797cf65c]" started-at="2025-08-02T18:09:06 IST" name="verifyTitle" finished-at="2025-08-02T18:09:06 IST" duration-ms="45" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitle -->
+        <test-method signature="verifyLogo()[pri:2, instance:testCases.TC001_ValidateHomePage@797cf65c]" started-at="2025-08-02T18:09:06 IST" name="verifyLogo" finished-at="2025-08-02T18:09:07 IST" duration-ms="877" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogo -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC001_ValidateHomePage@797cf65c]" started-at="2025-08-02T18:09:07 IST" name="tearDown" finished-at="2025-08-02T18:09:09 IST" duration-ms="2210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC001_ValidateHomePage -->
+      <class name="testCases.TC002_ValidateLoginFunctionality">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_ValidateLoginFunctionality@3a12c404]" started-at="2025-08-02T18:09:09 IST" name="setup" finished-at="2025-08-02T18:09:13 IST" duration-ms="4234" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_ValidateLoginFunctionality@3a12c404]" started-at="2025-08-02T18:09:16 IST" name="verifyLogin" data-provider="LoginData" finished-at="2025-08-02T18:09:20 IST" duration-ms="4844" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Valid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_ValidateLoginFunctionality@3a12c404]" started-at="2025-08-02T18:09:20 IST" name="verifyLogin" data-provider="LoginData" finished-at="2025-08-02T18:09:33 IST" duration-ms="12086" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_ValidateLoginFunctionality@3a12c404]" started-at="2025-08-02T18:09:33 IST" name="verifyLogin" data-provider="LoginData" finished-at="2025-08-02T18:09:45 IST" duration-ms="12033" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_ValidateLoginFunctionality@3a12c404]" started-at="2025-08-02T18:09:45 IST" name="verifyLogin" data-provider="LoginData" finished-at="2025-08-02T18:09:48 IST" duration-ms="3802" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Valid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC002_ValidateLoginFunctionality@3a12c404]" started-at="2025-08-02T18:09:48 IST" name="tearDown" finished-at="2025-08-02T18:09:51 IST" duration-ms="2254" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC002_ValidateLoginFunctionality -->
+    </test> <!-- chrometest -->
+  </suite> <!-- Suite -->
+</testng-results>
