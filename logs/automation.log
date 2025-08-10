@@ -1,2 +1,17 @@
-18:09:48.884 [main] INFO  testCases.TC002_ValidateLoginFunctionality - ********** Logged out successfully. **********
-18:09:48.891 [main] INFO  testCases.TC002_ValidateLoginFunctionality - ********** Finished TC002_ValidateLoginFunctionality ************
+13:15:17.009 [main] INFO  testCases.TC004_SearchUsersFunctionality - ******* Started: TC004_SearchUsersFunctionality : testTableData *********
+13:15:17.367 [main] INFO  testCases.TC004_SearchUsersFunctionality - Rows counts are: 23
+13:15:17.367 [main] INFO  testCases.TC004_SearchUsersFunctionality - ******* Finished: TC004_SearchUsersFunctionality : testTableData *********
+13:15:17.371 [main] INFO  testCases.TC004_SearchUsersFunctionality - ******* Started: TC004_SearchUsersFunctionality : validateSearchFunctionality *********
+13:15:17.373 [main] INFO  testCases.TC004_SearchUsersFunctionality - Enter User Name: Admin1
+13:15:17.484 [main] INFO  testCases.TC004_SearchUsersFunctionality - Click on Search Button
+13:15:17.535 [main] INFO  testCases.TC004_SearchUsersFunctionality - Checking if username 'Admin1' is present in the table.
+13:15:17.563 [main] ERROR testCases.TC004_SearchUsersFunctionality - An error occurred while checking username presence: stale element reference: stale element not found in the current frame
+  (Session info: chrome=139.0.7258.66)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6639f2c9f0858ee09562404d6cb828b3, getElementText {id=f.E56C96DB5AA45C4A8853B54C33A6DA62.d.4CE5419DE0A240B31D4974EF6489A0F7.e.152}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.66, chrome: {chromedriverVersion: 139.0.7258.66 (a62d32994769..., userDataDir: C:\Users\pushk\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61108}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61108/devtoo..., se:cdpVersion: 139.0.7258.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (6639f2c9f0858ee09562404d6cb828b3)] -> xpath: //div[@class='oxd-table-body']//div//div[2]]
+Session ID: 6639f2c9f0858ee09562404d6cb828b3

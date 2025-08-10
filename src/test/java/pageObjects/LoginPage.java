@@ -44,20 +44,28 @@ public class LoginPage extends BasePage{
 	}
 	
 	// Enter user name method
-	public void enterUsername(String name)
+	public void enterUsername(String userName)
 	{
-		txtUsername.sendKeys(name);
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOf(txtUsername));
+		txtUsername.clear();
+		txtUsername.sendKeys(userName);
 	}
 	
 	// Enter password method
-	public void enterPassword(String name)
+	public void enterPassword(String password)
 	{
-		txtPassword.sendKeys(name);
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOf(txtPassword));
+		txtPassword.clear();
+		txtPassword.sendKeys(password);
 	}
 	
 	// Click on login button
 	public void clickLogin()
 	{
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOf(btnLogin));
 		//Sol1
 		btnLogin.click();
 		
@@ -79,6 +87,14 @@ public class LoginPage extends BasePage{
 		//WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		//wait.until(ExpectedConditions.elementToBeClickable(btnLogin));
 	}
+	
+	// Combined login method
+    public void combinedLogin(String username, String password) 
+    {
+        enterUsername(username);
+        enterPassword(password);
+        clickLogin();
+    }
 	
 	public String errorLogin()
 	{

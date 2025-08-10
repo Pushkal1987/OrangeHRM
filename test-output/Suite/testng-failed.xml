@@ -8,13 +8,16 @@
     <parameter name="os" value="Windows"/>
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.TC002_ValidateLoginFunctionality">
+      <class name="testCases.TC004_SearchUsersFunctionality">
         <methods>
+          <include name="validateSearchFunctionality"/>
+          <include name="login"/>
+          <include name="clickUserManagementMenu"/>
           <include name="tearDown"/>
+          <include name="validateClickOnAddbutton"/>
           <include name="setup"/>
-          <include name="verifyLogin" invocation-numbers="3"/>
         </methods>
-      </class> <!-- testCases.TC002_ValidateLoginFunctionality -->
+      </class> <!-- testCases.TC004_SearchUsersFunctionality -->
     </classes>
   </test> <!-- chrometest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

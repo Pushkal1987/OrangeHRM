@@ -13,6 +13,8 @@
 	    <classes>
 	      	<class name="testCases.TC001_ValidateHomePage"/> 
 	      	<class name="testCases.TC002_ValidateLoginFunctionality"/>
+	      	<class name="testCases.TC003_ValidateAdminMainPage"/> 
+	      	<class name="testCases.TC004_SearchUsersFunctionality"/>
 	    </classes>
   	</test> <!-- Test -->
       

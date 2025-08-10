@@ -6,15 +6,21 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
+import java.util.NoSuchElementException;
 import java.util.Properties;
+import org.openqa.selenium.*;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.*;
 import com.google.common.io.Files;
 import org.apache.logging.log4j.LogManager;  //Log4J
@@ -78,5 +84,36 @@ public class BaseClass {
 		
 		return targetFilePath;
 	}
+	
+	// Scrolls until the element is no longer displayed.
+	
+	//public int timeoutSeconds =10;
+    
+    public void scrollUntilElementNotDisplayed(WebElement element, int timeoutSeconds) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutSeconds));
+
+        try {
+            wait.until(driver1 -> {
+                try 
+                {
+                    if (!element.isDisplayed()) 
+                    {
+                        return true; // already hidden
+                    }
+                    js.executeScript("arguments[0].scrollIntoView(true);", element);
+                    js.executeScript("window.scrollBy(0, 100);"); // offset scroll
+                    return false;
+                } catch (NoSuchElementException | StaleElementReferenceException e) 
+                {
+                    return true; // removed from DOM
+                }
+            });
+            System.out.println("✅ Element is no longer displayed.");
+        } catch (TimeoutException e) 
+        {
+            throw new TimeoutException("❌ Element still displayed after " + timeoutSeconds + " seconds.");
+        }
+    }
 
 }

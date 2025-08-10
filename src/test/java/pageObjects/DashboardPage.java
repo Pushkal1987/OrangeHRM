@@ -1,5 +1,7 @@
 package pageObjects;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -22,6 +24,10 @@ public class DashboardPage extends BasePage{
 	// Logout button WebElement
 	@FindBy(xpath="//a[normalize-space()='Logout']")
 	WebElement btnLogout;
+	
+	// To select menu's
+	@FindBy(xpath="//ul[@class='oxd-main-menu']//li")
+	List <WebElement> menuPanelList;
 	
 	// Logout panel click
 	public void clickLogoutPanel() throws InterruptedException
@@ -52,6 +58,17 @@ public class DashboardPage extends BasePage{
 		}
 	}
 	
-	
-
+	// Menu selection
+	public void menuSelection(String menuName)
+	{
+		for (WebElement item : menuPanelList) 
+		{
+		    String menuText = item.getText().trim();
+		    if (menuText.equalsIgnoreCase(menuName)) 
+		    {
+		        item.click();   // Click only this menu
+		        break;          // Exit loop after clicking
+		    }
+		}			
+	}
 }
