@@ -8,16 +8,14 @@
     <parameter name="os" value="Windows"/>
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.TC004_SearchUsersFunctionality">
+      <class name="testCases.TC0003_VerifyMenuPanel">
         <methods>
-          <include name="validateSearchFunctionality"/>
-          <include name="login"/>
-          <include name="clickUserManagementMenu"/>
+          <include name="loginWithValidCredentials"/>
           <include name="tearDown"/>
-          <include name="validateClickOnAddbutton"/>
+          <include name="verifyAllAvailableMenuOptionsOnMenuPanel" invocation-numbers="2 10"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- testCases.TC004_SearchUsersFunctionality -->
+      </class> <!-- testCases.TC0003_VerifyMenuPanel -->
     </classes>
   </test> <!-- chrometest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

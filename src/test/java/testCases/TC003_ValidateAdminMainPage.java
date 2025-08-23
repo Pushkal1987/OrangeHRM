@@ -2,16 +2,18 @@ package testCases;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
 import pageObjects.AdminUserManagementPage;
 import pageObjects.DashboardPage;
 import pageObjects.LoginPage;
 import testBase.BaseClass;
 
 public class TC003_ValidateAdminMainPage extends BaseClass{
-	
+		
 	@Test(priority =1)
 	public void login()
 	{
+		
 		logger.info("******* Started: TC003_ValidateAdminMainPage : login *********");
 		boolean isLoginSuccessful = false;
 		try
@@ -20,11 +22,14 @@ public class TC003_ValidateAdminMainPage extends BaseClass{
 			String username = p.getProperty("username");	// get username data from properties file
 			String password = p.getProperty("password");	// get password data from properties file
 			logger.info("Entering username: " + username);
+			
 			lp.enterUsername(username);						// pass the username data to the method in LoginPage class
 			logger.info("Entering password: " + password);
-			lp.enterPassword(password);						// pass the password data to the method in LoginPage class
+			lp.enterPassword(password);	
+			
 			logger.info("Clicking on Login button.");
 			lp.clickLogin();
+			
 			
 			//Add a verification step to confirm login
 	        DashboardPage dp = new DashboardPage(driver);

@@ -1,0 +1,79 @@
+18:08:04.123 [main] INFO  testCases.TC0003_VerifyMenuPanel - Verifying if the menu option 'Performance' is displayed in the menu panel...
+18:08:04.152 [main] INFO  testCases.TC0003_VerifyMenuPanel - Menu option 'Performance' is available in the menu panel.
+18:08:04.152 [main] INFO  testCases.TC0003_VerifyMenuPanel - ******* Finished: TC0003_VerifyMenuPanel : verifyAllAvailableMenuOptionsOnMenuPanel *********
+18:08:04.346 [main] INFO  testCases.TC0003_VerifyMenuPanel - ******* Started: TC0003_VerifyMenuPanel : verifyAllAvailableMenuOptionsOnMenuPanel *********
+18:08:04.584 [main] INFO  testCases.TC0003_VerifyMenuPanel - Verifying if the menu option 'Dashboard' is displayed in the menu panel...
+18:08:04.599 [main] INFO  testCases.TC0003_VerifyMenuPanel - Menu option 'Dashboard' is available in the menu panel.
+18:08:04.600 [main] INFO  testCases.TC0003_VerifyMenuPanel - ******* Finished: TC0003_VerifyMenuPanel : verifyAllAvailableMenuOptionsOnMenuPanel *********
+18:08:04.792 [main] INFO  testCases.TC0003_VerifyMenuPanel - ******* Started: TC0003_VerifyMenuPanel : verifyAllAvailableMenuOptionsOnMenuPanel *********
+18:08:05.076 [main] INFO  testCases.TC0003_VerifyMenuPanel - Verifying if the menu option 'Directory' is displayed in the menu panel...
+18:08:05.076 [main] INFO  testCases.TC0003_VerifyMenuPanel - Menu option 'Directory' is available in the menu panel.
+18:08:05.076 [main] INFO  testCases.TC0003_VerifyMenuPanel - ******* Finished: TC0003_VerifyMenuPanel : verifyAllAvailableMenuOptionsOnMenuPanel *********
+18:08:05.238 [main] INFO  testCases.TC0003_VerifyMenuPanel - ******* Started: TC0003_VerifyMenuPanel : verifyAllAvailableMenuOptionsOnMenuPanel *********
+18:08:05.473 [main] INFO  testCases.TC0003_VerifyMenuPanel - Verifying if the menu option 'Maintenance' is displayed in the menu panel...
+18:08:05.473 [main] INFO  testCases.TC0003_VerifyMenuPanel - Menu option 'Maintenance' is available in the menu panel.
+18:08:05.473 [main] INFO  testCases.TC0003_VerifyMenuPanel - ******* Finished: TC0003_VerifyMenuPanel : verifyAllAvailableMenuOptionsOnMenuPanel *********
+18:08:05.642 [main] INFO  testCases.TC0003_VerifyMenuPanel - ******* Started: TC0003_VerifyMenuPanel : verifyAllAvailableMenuOptionsOnMenuPanel *********
+18:08:05.912 [main] INFO  testCases.TC0003_VerifyMenuPanel - Verifying if the menu option 'Claima' is displayed in the menu panel...
+18:08:05.912 [main] ERROR testCases.TC0003_VerifyMenuPanel - Menu option 'Claima' is not available in the menu panel.
+18:08:06.070 [main] INFO  testCases.TC0003_VerifyMenuPanel - ******* Started: TC0003_VerifyMenuPanel : verifyAllAvailableMenuOptionsOnMenuPanel *********
+18:08:06.325 [main] INFO  testCases.TC0003_VerifyMenuPanel - Verifying if the menu option 'Buzz' is displayed in the menu panel...
+18:08:06.325 [main] INFO  testCases.TC0003_VerifyMenuPanel - Menu option 'Buzz' is available in the menu panel.
+18:08:06.325 [main] INFO  testCases.TC0003_VerifyMenuPanel - ******* Finished: TC0003_VerifyMenuPanel : verifyAllAvailableMenuOptionsOnMenuPanel *********
+18:08:06.491 [main] INFO  testCases.TC0003_VerifyMenuPanel - ******* Started: TC0003_VerifyMenuPanel : verifySearchBoxFunctionality *********
+18:08:06.493 [main] INFO  testCases.TC0003_VerifyMenuPanel - Retrieving the expected menu name from properties file...
+18:08:06.493 [main] INFO  testCases.TC0003_VerifyMenuPanel - Entering the expected menu name 'Leave' in the search box...
+18:08:06.771 [main] INFO  testCases.TC0003_VerifyMenuPanel - Retrieving all menu names from the menu panel...
+18:08:06.822 [main] INFO  testCases.TC0003_VerifyMenuPanel - Verifying if the expected menu name 'Leave' is present in the menu panel...
+18:08:06.823 [main] INFO  testCases.TC0003_VerifyMenuPanel - Search box functionality is working correctly. Expected menu: 'Leave', Found menu: '[Leave]'.
+18:08:06.823 [main] INFO  testCases.TC0003_VerifyMenuPanel - ******* Finished: TC0003_VerifyMenuPanel : verifySearchBoxFunctionality *********
+18:12:16.927 [main] INFO  testCases.TC0003_VerifyMenuPanel - ******* Started: TC0003_VerifyMenuPanel : loginWithValidCredentials *********
+18:12:16.957 [main] INFO  testCases.TC0003_VerifyMenuPanel - Logging in with valid credentials...
+18:12:16.957 [main] INFO  testCases.TC0003_VerifyMenuPanel - Entering username: Admin
+18:12:17.847 [main] INFO  testCases.TC0003_VerifyMenuPanel - Entering password: admin123
+18:12:18.125 [main] INFO  testCases.TC0003_VerifyMenuPanel - Clicking the login button...
+18:12:19.760 [main] INFO  testCases.TC0003_VerifyMenuPanel - Login successful: Time at Work is displayed.
+18:12:19.765 [main] INFO  testCases.TC0003_VerifyMenuPanel - Login successful and Time at Work is displayed.
+18:12:19.765 [main] INFO  testCases.TC0003_VerifyMenuPanel - ******* Finished: TC0003_VerifyMenuPanel : loginWithValidCredentials *********
+18:15:29.044 [main] INFO  testCases.TC0003_VerifyMenuPanel - ******* Started: TC0003_VerifyMenuPanel : loginWithValidCredentials *********
+18:15:29.072 [main] INFO  testCases.TC0003_VerifyMenuPanel - Logging in with valid credentials...
+18:15:29.072 [main] INFO  testCases.TC0003_VerifyMenuPanel - Entering username: Admin
+18:15:29.992 [main] INFO  testCases.TC0003_VerifyMenuPanel - Entering password: admin123
+18:15:30.186 [main] INFO  testCases.TC0003_VerifyMenuPanel - Clicking the login button...
+18:15:31.874 [main] INFO  testCases.TC0003_VerifyMenuPanel - Login successful: Time at Work is displayed.
+18:15:31.877 [main] INFO  testCases.TC0003_VerifyMenuPanel - Login successful and Time at Work is displayed.
+18:15:31.877 [main] INFO  testCases.TC0003_VerifyMenuPanel - ******* Finished: TC0003_VerifyMenuPanel : loginWithValidCredentials *********
+18:15:32.260 [main] INFO  testCases.TC0003_VerifyMenuPanel - ******* Started: TC0003_VerifyMenuPanel : verifyLogoOnMenuPanel *********
+18:15:32.264 [main] INFO  testCases.TC0003_VerifyMenuPanel - Verifying if the logo is displayed on the menu panel...
+18:15:32.359 [main] INFO  testCases.TC0003_VerifyMenuPanel - Logo is displayed on the menu panel.
+18:15:32.359 [main] INFO  testCases.TC0003_VerifyMenuPanel - Logo on menu panel verified successfully.
+18:15:32.359 [main] INFO  testCases.TC0003_VerifyMenuPanel - ******* Finished: TC0003_VerifyMenuPanel : verifyLogoOnMenuPanel *********
+18:15:32.947 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+18:15:32.956 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+18:15:33.808 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+18:15:33.811 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+18:15:33.865 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+18:15:33.866 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+18:15:33.905 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+18:15:33.908 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+18:15:33.949 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+18:15:33.950 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+18:15:33.984 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+18:15:33.986 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+18:15:34.017 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+18:15:34.018 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+18:15:34.056 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+18:15:34.060 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+18:15:34.102 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+18:15:34.104 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+18:15:34.145 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+18:15:34.146 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+18:15:34.177 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+18:15:34.179 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+18:15:34.209 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+18:15:34.211 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+18:15:34.237 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+18:15:34.238 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+18:15:34.258 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+18:15:34.260 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+18:15:34.287 [main] INFO  testCases.TC0003_VerifyMenuPanel - ******* Started: TC0003_VerifyMenuPanel : verifyAllAvailableMenuOptionsOnMenuPanel *********

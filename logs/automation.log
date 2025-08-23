@@ -1,17 +1,52 @@
-13:15:17.009 [main] INFO  testCases.TC004_SearchUsersFunctionality - ******* Started: TC004_SearchUsersFunctionality : testTableData *********
-13:15:17.367 [main] INFO  testCases.TC004_SearchUsersFunctionality - Rows counts are: 23
-13:15:17.367 [main] INFO  testCases.TC004_SearchUsersFunctionality - ******* Finished: TC004_SearchUsersFunctionality : testTableData *********
-13:15:17.371 [main] INFO  testCases.TC004_SearchUsersFunctionality - ******* Started: TC004_SearchUsersFunctionality : validateSearchFunctionality *********
-13:15:17.373 [main] INFO  testCases.TC004_SearchUsersFunctionality - Enter User Name: Admin1
-13:15:17.484 [main] INFO  testCases.TC004_SearchUsersFunctionality - Click on Search Button
-13:15:17.535 [main] INFO  testCases.TC004_SearchUsersFunctionality - Checking if username 'Admin1' is present in the table.
-13:15:17.563 [main] ERROR testCases.TC004_SearchUsersFunctionality - An error occurred while checking username presence: stale element reference: stale element not found in the current frame
-  (Session info: chrome=139.0.7258.66)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.33.0', revision: '2c6aaad03a'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6639f2c9f0858ee09562404d6cb828b3, getElementText {id=f.E56C96DB5AA45C4A8853B54C33A6DA62.d.4CE5419DE0A240B31D4974EF6489A0F7.e.152}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.66, chrome: {chromedriverVersion: 139.0.7258.66 (a62d32994769..., userDataDir: C:\Users\pushk\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61108}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61108/devtoo..., se:cdpVersion: 139.0.7258.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (6639f2c9f0858ee09562404d6cb828b3)] -> xpath: //div[@class='oxd-table-body']//div//div[2]]
-Session ID: 6639f2c9f0858ee09562404d6cb828b3
+18:15:34.337 [main] INFO  testCases.TC0003_VerifyMenuPanel - Verifying if the menu option 'Admin' is displayed in the menu panel...
+18:15:34.346 [main] INFO  testCases.TC0003_VerifyMenuPanel - Menu option 'Admin' is available in the menu panel.
+18:15:34.346 [main] INFO  testCases.TC0003_VerifyMenuPanel - ******* Finished: TC0003_VerifyMenuPanel : verifyAllAvailableMenuOptionsOnMenuPanel *********
+18:15:34.523 [main] INFO  testCases.TC0003_VerifyMenuPanel - ******* Started: TC0003_VerifyMenuPanel : verifyAllAvailableMenuOptionsOnMenuPanel *********
+18:15:34.588 [main] INFO  testCases.TC0003_VerifyMenuPanel - Verifying if the menu option 'PIM' is displayed in the menu panel...
+18:15:34.602 [main] INFO  testCases.TC0003_VerifyMenuPanel - Menu option 'PIM' is available in the menu panel.
+18:15:34.602 [main] INFO  testCases.TC0003_VerifyMenuPanel - ******* Finished: TC0003_VerifyMenuPanel : verifyAllAvailableMenuOptionsOnMenuPanel *********
+18:15:34.779 [main] INFO  testCases.TC0003_VerifyMenuPanel - ******* Started: TC0003_VerifyMenuPanel : verifyAllAvailableMenuOptionsOnMenuPanel *********
+18:15:35.063 [main] INFO  testCases.TC0003_VerifyMenuPanel - Verifying if the menu option 'Leavea' is displayed in the menu panel...
+18:15:35.063 [main] ERROR testCases.TC0003_VerifyMenuPanel - Menu option 'Leavea' is not available in the menu panel.
+18:15:35.286 [main] INFO  testCases.TC0003_VerifyMenuPanel - ******* Started: TC0003_VerifyMenuPanel : verifyAllAvailableMenuOptionsOnMenuPanel *********
+18:15:35.384 [main] INFO  testCases.TC0003_VerifyMenuPanel - Verifying if the menu option 'Time' is displayed in the menu panel...
+18:15:35.385 [main] INFO  testCases.TC0003_VerifyMenuPanel - Menu option 'Time' is available in the menu panel.
+18:15:35.385 [main] INFO  testCases.TC0003_VerifyMenuPanel - ******* Finished: TC0003_VerifyMenuPanel : verifyAllAvailableMenuOptionsOnMenuPanel *********
+18:15:35.549 [main] INFO  testCases.TC0003_VerifyMenuPanel - ******* Started: TC0003_VerifyMenuPanel : verifyAllAvailableMenuOptionsOnMenuPanel *********
+18:15:35.664 [main] INFO  testCases.TC0003_VerifyMenuPanel - Verifying if the menu option 'Recruitment' is displayed in the menu panel...
+18:15:35.664 [main] INFO  testCases.TC0003_VerifyMenuPanel - Menu option 'Recruitment' is available in the menu panel.
+18:15:35.664 [main] INFO  testCases.TC0003_VerifyMenuPanel - ******* Finished: TC0003_VerifyMenuPanel : verifyAllAvailableMenuOptionsOnMenuPanel *********
+18:15:35.840 [main] INFO  testCases.TC0003_VerifyMenuPanel - ******* Started: TC0003_VerifyMenuPanel : verifyAllAvailableMenuOptionsOnMenuPanel *********
+18:15:36.032 [main] INFO  testCases.TC0003_VerifyMenuPanel - Verifying if the menu option 'My Info' is displayed in the menu panel...
+18:15:36.033 [main] INFO  testCases.TC0003_VerifyMenuPanel - Menu option 'My Info' is available in the menu panel.
+18:15:36.033 [main] INFO  testCases.TC0003_VerifyMenuPanel - ******* Finished: TC0003_VerifyMenuPanel : verifyAllAvailableMenuOptionsOnMenuPanel *********
+18:15:36.214 [main] INFO  testCases.TC0003_VerifyMenuPanel - ******* Started: TC0003_VerifyMenuPanel : verifyAllAvailableMenuOptionsOnMenuPanel *********
+18:15:36.352 [main] INFO  testCases.TC0003_VerifyMenuPanel - Verifying if the menu option 'Performance' is displayed in the menu panel...
+18:15:36.352 [main] INFO  testCases.TC0003_VerifyMenuPanel - Menu option 'Performance' is available in the menu panel.
+18:15:36.353 [main] INFO  testCases.TC0003_VerifyMenuPanel - ******* Finished: TC0003_VerifyMenuPanel : verifyAllAvailableMenuOptionsOnMenuPanel *********
+18:15:36.546 [main] INFO  testCases.TC0003_VerifyMenuPanel - ******* Started: TC0003_VerifyMenuPanel : verifyAllAvailableMenuOptionsOnMenuPanel *********
+18:15:36.797 [main] INFO  testCases.TC0003_VerifyMenuPanel - Verifying if the menu option 'Dashboard' is displayed in the menu panel...
+18:15:36.797 [main] INFO  testCases.TC0003_VerifyMenuPanel - Menu option 'Dashboard' is available in the menu panel.
+18:15:36.797 [main] INFO  testCases.TC0003_VerifyMenuPanel - ******* Finished: TC0003_VerifyMenuPanel : verifyAllAvailableMenuOptionsOnMenuPanel *********
+18:15:36.989 [main] INFO  testCases.TC0003_VerifyMenuPanel - ******* Started: TC0003_VerifyMenuPanel : verifyAllAvailableMenuOptionsOnMenuPanel *********
+18:15:37.255 [main] INFO  testCases.TC0003_VerifyMenuPanel - Verifying if the menu option 'Directory' is displayed in the menu panel...
+18:15:37.256 [main] INFO  testCases.TC0003_VerifyMenuPanel - Menu option 'Directory' is available in the menu panel.
+18:15:37.256 [main] INFO  testCases.TC0003_VerifyMenuPanel - ******* Finished: TC0003_VerifyMenuPanel : verifyAllAvailableMenuOptionsOnMenuPanel *********
+18:15:37.437 [main] INFO  testCases.TC0003_VerifyMenuPanel - ******* Started: TC0003_VerifyMenuPanel : verifyAllAvailableMenuOptionsOnMenuPanel *********
+18:15:37.736 [main] INFO  testCases.TC0003_VerifyMenuPanel - Verifying if the menu option 'Maintenance' is displayed in the menu panel...
+18:15:37.737 [main] INFO  testCases.TC0003_VerifyMenuPanel - Menu option 'Maintenance' is available in the menu panel.
+18:15:37.737 [main] INFO  testCases.TC0003_VerifyMenuPanel - ******* Finished: TC0003_VerifyMenuPanel : verifyAllAvailableMenuOptionsOnMenuPanel *********
+18:15:37.906 [main] INFO  testCases.TC0003_VerifyMenuPanel - ******* Started: TC0003_VerifyMenuPanel : verifyAllAvailableMenuOptionsOnMenuPanel *********
+18:15:38.179 [main] INFO  testCases.TC0003_VerifyMenuPanel - Verifying if the menu option 'Claima' is displayed in the menu panel...
+18:15:38.179 [main] ERROR testCases.TC0003_VerifyMenuPanel - Menu option 'Claima' is not available in the menu panel.
+18:15:38.388 [main] INFO  testCases.TC0003_VerifyMenuPanel - ******* Started: TC0003_VerifyMenuPanel : verifyAllAvailableMenuOptionsOnMenuPanel *********
+18:15:38.664 [main] INFO  testCases.TC0003_VerifyMenuPanel - Verifying if the menu option 'Buzz' is displayed in the menu panel...
+18:15:38.664 [main] INFO  testCases.TC0003_VerifyMenuPanel - Menu option 'Buzz' is available in the menu panel.
+18:15:38.664 [main] INFO  testCases.TC0003_VerifyMenuPanel - ******* Finished: TC0003_VerifyMenuPanel : verifyAllAvailableMenuOptionsOnMenuPanel *********
+18:15:38.849 [main] INFO  testCases.TC0003_VerifyMenuPanel - ******* Started: TC0003_VerifyMenuPanel : verifySearchBoxFunctionality *********
+18:15:38.851 [main] INFO  testCases.TC0003_VerifyMenuPanel - Retrieving the expected menu name from properties file...
+18:15:38.852 [main] INFO  testCases.TC0003_VerifyMenuPanel - Entering the expected menu name 'Leave' in the search box...
+18:15:39.112 [main] INFO  testCases.TC0003_VerifyMenuPanel - Retrieving all menu names from the menu panel...
+18:15:39.147 [main] INFO  testCases.TC0003_VerifyMenuPanel - Verifying if the expected menu name 'Leave' is present in the menu panel...
+18:15:39.148 [main] INFO  testCases.TC0003_VerifyMenuPanel - Search box functionality is working correctly. Expected menu: 'Leave', Found menu: '[Leave]'.
+18:15:39.149 [main] INFO  testCases.TC0003_VerifyMenuPanel - ******* Finished: TC0003_VerifyMenuPanel : verifySearchBoxFunctionality *********

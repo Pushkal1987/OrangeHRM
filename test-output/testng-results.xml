@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="14" passed="12" failed="1" skipped="1">
+<testng-results ignored="0" total="15" passed="13" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-10T13:14:09 IST" name="Suite" finished-at="2025-08-10T13:15:19 IST" duration-ms="69974">
+  <suite started-at="2025-08-23T18:15:23 IST" name="Suite" finished-at="2025-08-23T18:15:41 IST" duration-ms="18411">
     <groups>
     </groups>
-    <test started-at="2025-08-10T13:14:09 IST" name="chrometest" finished-at="2025-08-10T13:15:19 IST" duration-ms="69974">
-      <class name="testCases.TC003_ValidateAdminMainPage">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC003_ValidateAdminMainPage@6187d1f5]" started-at="2025-08-10T13:14:59 IST" name="setup" finished-at="2025-08-10T13:15:02 IST" duration-ms="3447" status="PASS">
+    <test started-at="2025-08-23T18:15:23 IST" name="chrometest" finished-at="2025-08-23T18:15:41 IST" duration-ms="18411">
+      <class name="testCases.TC0003_VerifyMenuPanel">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC0003_VerifyMenuPanel@63475ace]" started-at="2025-08-23T18:15:23 IST" name="setup" finished-at="2025-08-23T18:15:28 IST" duration-ms="5556" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,109 +23,52 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="login()[pri:1, instance:testCases.TC003_ValidateAdminMainPage@6187d1f5]" started-at="2025-08-10T13:15:02 IST" name="login" finished-at="2025-08-10T13:15:05 IST" duration-ms="2303" status="PASS">
+        <test-method signature="loginWithValidCredentials()[pri:0, instance:testCases.TC0003_VerifyMenuPanel@63475ace]" started-at="2025-08-23T18:15:29 IST" name="loginWithValidCredentials" description="Login with valid credentials" finished-at="2025-08-23T18:15:31 IST" duration-ms="2862" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="clickAdminMenu()[pri:2, instance:testCases.TC003_ValidateAdminMainPage@6187d1f5]" started-at="2025-08-10T13:15:05 IST" name="clickAdminMenu" finished-at="2025-08-10T13:15:06 IST" depends-on-methods="testCases.TC003_ValidateAdminMainPage.login" duration-ms="1348" status="PASS">
+        </test-method> <!-- loginWithValidCredentials -->
+        <test-method signature="verifyLogoOnMenuPanel()[pri:1, instance:testCases.TC0003_VerifyMenuPanel@63475ace]" started-at="2025-08-23T18:15:32 IST" name="verifyLogoOnMenuPanel" description="Verify the presence of the logo on the menu panel" finished-at="2025-08-23T18:15:32 IST" depends-on-methods="testCases.TC0003_VerifyMenuPanel.loginWithValidCredentials" duration-ms="106" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickAdminMenu -->
-        <test-method signature="verifySystemUser()[pri:3, instance:testCases.TC003_ValidateAdminMainPage@6187d1f5]" started-at="2025-08-10T13:15:06 IST" name="verifySystemUser" finished-at="2025-08-10T13:15:06 IST" depends-on-methods="testCases.TC003_ValidateAdminMainPage.login, testCases.TC003_ValidateAdminMainPage.clickAdminMenu" duration-ms="335" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySystemUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC003_ValidateAdminMainPage@6187d1f5]" started-at="2025-08-10T13:15:06 IST" name="tearDown" finished-at="2025-08-10T13:15:09 IST" duration-ms="2142" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC003_ValidateAdminMainPage -->
-      <class name="testCases.TC001_ValidateHomePage">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC001_ValidateHomePage@41d426b5]" started-at="2025-08-10T13:14:10 IST" name="setup" finished-at="2025-08-10T13:14:16 IST" duration-ms="6919" status="PASS">
+        </test-method> <!-- verifyLogoOnMenuPanel -->
+        <test-method signature="verifyAllAvailableMenuOptionsOnMenuPanel(java.lang.String)[pri:2, instance:testCases.TC0003_VerifyMenuPanel@63475ace]" started-at="2025-08-23T18:15:34 IST" name="verifyAllAvailableMenuOptionsOnMenuPanel" description="Verify available menu options in the menu panel" data-provider="MenuListData" finished-at="2025-08-23T18:15:34 IST" depends-on-methods="testCases.TC0003_VerifyMenuPanel.loginWithValidCredentials" duration-ms="61" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
+                <![CDATA[Admin]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyTitle()[pri:1, instance:testCases.TC001_ValidateHomePage@41d426b5]" started-at="2025-08-10T13:14:16 IST" name="verifyTitle" finished-at="2025-08-10T13:14:17 IST" duration-ms="26" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTitle -->
-        <test-method signature="verifyLogo()[pri:2, instance:testCases.TC001_ValidateHomePage@41d426b5]" started-at="2025-08-10T13:14:17 IST" name="verifyLogo" finished-at="2025-08-10T13:14:17 IST" duration-ms="859" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogo -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC001_ValidateHomePage@41d426b5]" started-at="2025-08-10T13:14:17 IST" name="tearDown" finished-at="2025-08-10T13:14:20 IST" duration-ms="2165" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC001_ValidateHomePage -->
-      <class name="testCases.TC004_SearchUsersFunctionality">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC004_SearchUsersFunctionality@2445445a]" started-at="2025-08-10T13:15:09 IST" name="setup" finished-at="2025-08-10T13:15:12 IST" duration-ms="3386" status="PASS">
+        </test-method> <!-- verifyAllAvailableMenuOptionsOnMenuPanel -->
+        <test-method signature="verifyAllAvailableMenuOptionsOnMenuPanel(java.lang.String)[pri:2, instance:testCases.TC0003_VerifyMenuPanel@63475ace]" started-at="2025-08-23T18:15:34 IST" name="verifyAllAvailableMenuOptionsOnMenuPanel" description="Verify available menu options in the menu panel" data-provider="MenuListData" finished-at="2025-08-23T18:15:34 IST" depends-on-methods="testCases.TC0003_VerifyMenuPanel.loginWithValidCredentials" duration-ms="82" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
+                <![CDATA[PIM]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="login()[pri:1, instance:testCases.TC004_SearchUsersFunctionality@2445445a]" started-at="2025-08-10T13:15:12 IST" name="login" finished-at="2025-08-10T13:15:14 IST" duration-ms="2215" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="clickUserManagementMenu()[pri:2, instance:testCases.TC004_SearchUsersFunctionality@2445445a]" started-at="2025-08-10T13:15:14 IST" name="clickUserManagementMenu" finished-at="2025-08-10T13:15:17 IST" depends-on-methods="testCases.TC004_SearchUsersFunctionality.login" duration-ms="2373" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickUserManagementMenu -->
-        <test-method signature="testTableData()[pri:3, instance:testCases.TC004_SearchUsersFunctionality@2445445a]" started-at="2025-08-10T13:15:17 IST" name="testTableData" finished-at="2025-08-10T13:15:17 IST" depends-on-methods="testCases.TC004_SearchUsersFunctionality.login, testCases.TC004_SearchUsersFunctionality.clickUserManagementMenu" duration-ms="359" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTableData -->
-        <test-method signature="validateSearchFunctionality()[pri:4, instance:testCases.TC004_SearchUsersFunctionality@2445445a]" started-at="2025-08-10T13:15:17 IST" name="validateSearchFunctionality" finished-at="2025-08-10T13:15:17 IST" depends-on-methods="testCases.TC004_SearchUsersFunctionality.login, testCases.TC004_SearchUsersFunctionality.clickUserManagementMenu" duration-ms="195" status="FAIL">
+        </test-method> <!-- verifyAllAvailableMenuOptionsOnMenuPanel -->
+        <test-method signature="verifyAllAvailableMenuOptionsOnMenuPanel(java.lang.String)[pri:2, instance:testCases.TC0003_VerifyMenuPanel@63475ace]" started-at="2025-08-23T18:15:34 IST" name="verifyAllAvailableMenuOptionsOnMenuPanel" description="Verify available menu options in the menu panel" data-provider="MenuListData" finished-at="2025-08-23T18:15:35 IST" depends-on-methods="testCases.TC0003_VerifyMenuPanel.loginWithValidCredentials" duration-ms="286" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Leavea]]>
+              </value>
+            </param>
+          </params>
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Test failed due to exception: stale element reference: stale element not found in the current frame
-  (Session info: chrome=139.0.7258.66)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.33.0', revision: '2c6aaad03a'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6639f2c9f0858ee09562404d6cb828b3, getElementText {id=f.E56C96DB5AA45C4A8853B54C33A6DA62.d.4CE5419DE0A240B31D4974EF6489A0F7.e.152}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.66, chrome: {chromedriverVersion: 139.0.7258.66 (a62d32994769..., userDataDir: C:\Users\pushk\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61108}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61108/devtoo..., se:cdpVersion: 139.0.7258.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (6639f2c9f0858ee09562404d6cb828b3)] -> xpath: //div[@class='oxd-table-body']//div//div[2]]
-Session ID: 6639f2c9f0858ee09562404d6cb828b3]]>
+              <![CDATA[Menu option 'Leavea' is not available in the menu panel.]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Test failed due to exception: stale element reference: stale element not found in the current frame
-  (Session info: chrome=139.0.7258.66)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.33.0', revision: '2c6aaad03a'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6639f2c9f0858ee09562404d6cb828b3, getElementText {id=f.E56C96DB5AA45C4A8853B54C33A6DA62.d.4CE5419DE0A240B31D4974EF6489A0F7.e.152}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.66, chrome: {chromedriverVersion: 139.0.7258.66 (a62d32994769..., userDataDir: C:\Users\pushk\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61108}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61108/devtoo..., se:cdpVersion: 139.0.7258.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (6639f2c9f0858ee09562404d6cb828b3)] -> xpath: //div[@class='oxd-table-body']//div//div[2]]
-Session ID: 6639f2c9f0858ee09562404d6cb828b3
+              <![CDATA[java.lang.AssertionError: Menu option 'Leavea' is not available in the menu panel.
 at org.testng.Assert.fail(Assert.java:111)
-at testCases.TC004_SearchUsersFunctionality.validateSearchFunctionality(TC004_SearchUsersFunctionality.java:137)
+at testCases.TC0003_VerifyMenuPanel.verifyAllAvailableMenuOptionsOnMenuPanel(TC0003_VerifyMenuPanel.java:127)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -157,21 +100,108 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateSearchFunctionality -->
-        <test-method signature="validateClickOnAddbutton()[pri:5, instance:testCases.TC004_SearchUsersFunctionality@2445445a]" started-at="2025-08-10T13:15:17 IST" name="validateClickOnAddbutton" finished-at="2025-08-10T13:15:17 IST" depends-on-methods="testCases.TC004_SearchUsersFunctionality.login, testCases.TC004_SearchUsersFunctionality.clickUserManagementMenu, testCases.TC004_SearchUsersFunctionality.validateSearchFunctionality" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
+        </test-method> <!-- verifyAllAvailableMenuOptionsOnMenuPanel -->
+        <test-method signature="verifyAllAvailableMenuOptionsOnMenuPanel(java.lang.String)[pri:2, instance:testCases.TC0003_VerifyMenuPanel@63475ace]" started-at="2025-08-23T18:15:35 IST" name="verifyAllAvailableMenuOptionsOnMenuPanel" description="Verify available menu options in the menu panel" data-provider="MenuListData" finished-at="2025-08-23T18:15:35 IST" depends-on-methods="testCases.TC0003_VerifyMenuPanel.loginWithValidCredentials" duration-ms="102" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Time]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllAvailableMenuOptionsOnMenuPanel -->
+        <test-method signature="verifyAllAvailableMenuOptionsOnMenuPanel(java.lang.String)[pri:2, instance:testCases.TC0003_VerifyMenuPanel@63475ace]" started-at="2025-08-23T18:15:35 IST" name="verifyAllAvailableMenuOptionsOnMenuPanel" description="Verify available menu options in the menu panel" data-provider="MenuListData" finished-at="2025-08-23T18:15:35 IST" depends-on-methods="testCases.TC0003_VerifyMenuPanel.loginWithValidCredentials" duration-ms="118" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Recruitment]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllAvailableMenuOptionsOnMenuPanel -->
+        <test-method signature="verifyAllAvailableMenuOptionsOnMenuPanel(java.lang.String)[pri:2, instance:testCases.TC0003_VerifyMenuPanel@63475ace]" started-at="2025-08-23T18:15:35 IST" name="verifyAllAvailableMenuOptionsOnMenuPanel" description="Verify available menu options in the menu panel" data-provider="MenuListData" finished-at="2025-08-23T18:15:36 IST" depends-on-methods="testCases.TC0003_VerifyMenuPanel.loginWithValidCredentials" duration-ms="195" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[My Info]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllAvailableMenuOptionsOnMenuPanel -->
+        <test-method signature="verifyAllAvailableMenuOptionsOnMenuPanel(java.lang.String)[pri:2, instance:testCases.TC0003_VerifyMenuPanel@63475ace]" started-at="2025-08-23T18:15:36 IST" name="verifyAllAvailableMenuOptionsOnMenuPanel" description="Verify available menu options in the menu panel" data-provider="MenuListData" finished-at="2025-08-23T18:15:36 IST" depends-on-methods="testCases.TC0003_VerifyMenuPanel.loginWithValidCredentials" duration-ms="141" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Performance]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllAvailableMenuOptionsOnMenuPanel -->
+        <test-method signature="verifyAllAvailableMenuOptionsOnMenuPanel(java.lang.String)[pri:2, instance:testCases.TC0003_VerifyMenuPanel@63475ace]" started-at="2025-08-23T18:15:36 IST" name="verifyAllAvailableMenuOptionsOnMenuPanel" description="Verify available menu options in the menu panel" data-provider="MenuListData" finished-at="2025-08-23T18:15:36 IST" depends-on-methods="testCases.TC0003_VerifyMenuPanel.loginWithValidCredentials" duration-ms="257" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dashboard]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllAvailableMenuOptionsOnMenuPanel -->
+        <test-method signature="verifyAllAvailableMenuOptionsOnMenuPanel(java.lang.String)[pri:2, instance:testCases.TC0003_VerifyMenuPanel@63475ace]" started-at="2025-08-23T18:15:36 IST" name="verifyAllAvailableMenuOptionsOnMenuPanel" description="Verify available menu options in the menu panel" data-provider="MenuListData" finished-at="2025-08-23T18:15:37 IST" depends-on-methods="testCases.TC0003_VerifyMenuPanel.loginWithValidCredentials" duration-ms="273" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Directory]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllAvailableMenuOptionsOnMenuPanel -->
+        <test-method signature="verifyAllAvailableMenuOptionsOnMenuPanel(java.lang.String)[pri:2, instance:testCases.TC0003_VerifyMenuPanel@63475ace]" started-at="2025-08-23T18:15:37 IST" name="verifyAllAvailableMenuOptionsOnMenuPanel" description="Verify available menu options in the menu panel" data-provider="MenuListData" finished-at="2025-08-23T18:15:37 IST" depends-on-methods="testCases.TC0003_VerifyMenuPanel.loginWithValidCredentials" duration-ms="302" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Maintenance]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllAvailableMenuOptionsOnMenuPanel -->
+        <test-method signature="verifyAllAvailableMenuOptionsOnMenuPanel(java.lang.String)[pri:2, instance:testCases.TC0003_VerifyMenuPanel@63475ace]" started-at="2025-08-23T18:15:37 IST" name="verifyAllAvailableMenuOptionsOnMenuPanel" description="Verify available menu options in the menu panel" data-provider="MenuListData" finished-at="2025-08-23T18:15:38 IST" depends-on-methods="testCases.TC0003_VerifyMenuPanel.loginWithValidCredentials" duration-ms="275" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Claima]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Method testCases.TC004_SearchUsersFunctionality.validateClickOnAddbutton() on instance testCases.TC004_SearchUsersFunctionality@2445445a depends on not successfully finished methods 
-[testCases.TC004_SearchUsersFunctionality.login() on instance testCases.TC004_SearchUsersFunctionality@2445445a
-testCases.TC004_SearchUsersFunctionality.clickUserManagementMenu() on instance testCases.TC004_SearchUsersFunctionality@2445445a
-testCases.TC004_SearchUsersFunctionality.validateSearchFunctionality() on instance testCases.TC004_SearchUsersFunctionality@2445445a]]]>
+              <![CDATA[Menu option 'Claima' is not available in the menu panel.]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method testCases.TC004_SearchUsersFunctionality.validateClickOnAddbutton() on instance testCases.TC004_SearchUsersFunctionality@2445445a depends on not successfully finished methods 
-[testCases.TC004_SearchUsersFunctionality.login() on instance testCases.TC004_SearchUsersFunctionality@2445445a
-testCases.TC004_SearchUsersFunctionality.clickUserManagementMenu() on instance testCases.TC004_SearchUsersFunctionality@2445445a
-testCases.TC004_SearchUsersFunctionality.validateSearchFunctionality() on instance testCases.TC004_SearchUsersFunctionality@2445445a]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+              <![CDATA[java.lang.AssertionError: Menu option 'Claima' is not available in the menu panel.
+at org.testng.Assert.fail(Assert.java:111)
+at testCases.TC0003_VerifyMenuPanel.verifyAllAvailableMenuOptionsOnMenuPanel(TC0003_VerifyMenuPanel.java:127)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
@@ -192,121 +222,30 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateClickOnAddbutton -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC004_SearchUsersFunctionality@2445445a]" started-at="2025-08-10T13:15:17 IST" name="tearDown" finished-at="2025-08-10T13:15:19 IST" duration-ms="2095" status="PASS">
+        </test-method> <!-- verifyAllAvailableMenuOptionsOnMenuPanel -->
+        <test-method signature="verifyAllAvailableMenuOptionsOnMenuPanel(java.lang.String)[pri:2, instance:testCases.TC0003_VerifyMenuPanel@63475ace]" started-at="2025-08-23T18:15:38 IST" name="verifyAllAvailableMenuOptionsOnMenuPanel" description="Verify available menu options in the menu panel" data-provider="MenuListData" finished-at="2025-08-23T18:15:38 IST" depends-on-methods="testCases.TC0003_VerifyMenuPanel.loginWithValidCredentials" duration-ms="284" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Buzz]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllAvailableMenuOptionsOnMenuPanel -->
+        <test-method signature="verifySearchBoxFunctionality()[pri:3, instance:testCases.TC0003_VerifyMenuPanel@63475ace]" started-at="2025-08-23T18:15:38 IST" name="verifySearchBoxFunctionality" description="Verify Search Box functionality in the menu panel" finished-at="2025-08-23T18:15:39 IST" depends-on-methods="testCases.TC0003_VerifyMenuPanel.loginWithValidCredentials" duration-ms="302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchBoxFunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC0003_VerifyMenuPanel@63475ace]" started-at="2025-08-23T18:15:39 IST" name="tearDown" finished-at="2025-08-23T18:15:41 IST" duration-ms="2252" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC004_SearchUsersFunctionality -->
-      <class name="testCases.TC002_ValidateLoginFunctionality">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_ValidateLoginFunctionality@59b38691]" started-at="2025-08-10T13:14:20 IST" name="setup" finished-at="2025-08-10T13:14:23 IST" duration-ms="3908" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_ValidateLoginFunctionality@59b38691]" started-at="2025-08-10T13:14:25 IST" name="verifyLogin" data-provider="LoginData" finished-at="2025-08-10T13:14:29 IST" duration-ms="3929" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Valid]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogin -->
-        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_ValidateLoginFunctionality@59b38691]" started-at="2025-08-10T13:14:29 IST" name="verifyLogin" data-provider="LoginData" finished-at="2025-08-10T13:14:41 IST" duration-ms="11712" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Admin1234]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Invalid]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogin -->
-        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_ValidateLoginFunctionality@59b38691]" started-at="2025-08-10T13:14:41 IST" name="verifyLogin" data-provider="LoginData" finished-at="2025-08-10T13:14:52 IST" duration-ms="11467" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Admin1234]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Invalid]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogin -->
-        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_ValidateLoginFunctionality@59b38691]" started-at="2025-08-10T13:14:52 IST" name="verifyLogin" data-provider="LoginData" finished-at="2025-08-10T13:14:57 IST" duration-ms="4574" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Valid]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC002_ValidateLoginFunctionality@59b38691]" started-at="2025-08-10T13:14:57 IST" name="tearDown" finished-at="2025-08-10T13:14:59 IST" duration-ms="2156" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC002_ValidateLoginFunctionality -->
+      </class> <!-- testCases.TC0003_VerifyMenuPanel -->
     </test> <!-- chrometest -->
   </suite> <!-- Suite -->
 </testng-results>

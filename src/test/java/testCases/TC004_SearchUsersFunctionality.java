@@ -69,12 +69,12 @@ public class TC004_SearchUsersFunctionality extends BaseClass{
 				if(systemUser)
 				{
 					logger.info("System User displayed successfully.");
-					Assert.assertTrue(true);
+					Assert.assertTrue(systemUser, "System User is displayed successfully.");
 				}
 				else
 				{
 					logger.error("System User not displyed.");
-					Assert.fail("System User not displyed");
+					Assert.fail("System User not displayed");
 				}
 		} catch(Exception e)
 		{
@@ -170,7 +170,84 @@ public class TC004_SearchUsersFunctionality extends BaseClass{
 	        e.printStackTrace(); // Optional, prints the full stack trace
 	        Assert.fail("Test failed due to exception: " + e.getMessage());
 		}
-		logger.info("******* Finished: TC004_SearchUsersFunctionality : validateClickOnAddbutton *********");
-			
-		}	
+		logger.info("******* Finished: TC004_SearchUsersFunctionality : validateClickOnAddbutton *********");			
+	}	
+	
+	//@Test(priority =5, dependsOnMethods = {"login","clickUserManagementMenu","validateSearchFunctionality","validateClickOnAddbutton"})
+	public void selectUserRole()
+	{
+		logger.info("******* Started: TC004_SearchUsersFunctionality : selectUserRole *********");
+		AdminUserManagementPage ap = new AdminUserManagementPage(driver);
+		logger.info("Click on User Role dropdown");
+		ap.drpUserRole();
+		logger.info("Select User Role option 'ESS'");
+		ap.selectUserRoleOption("ESS");
+		logger.info("Validating 'ESS' option is selected.");
+		String selectedOption = ap.getSelectedUserRole();
+		logger.info("Selected User Role is: " + selectedOption);
+		// Validate if the selected option is "ESS"
+		if (selectedOption.equalsIgnoreCase("ESS")) 
+		{
+			logger.info("ESS option is selected successfully.");
+			Assert.assertTrue(true);
+		} else 
+		{
+			logger.error("ESS option is not selected.");
+			Assert.fail("ESS option is not selected.");
+		}
+		logger.info("******* Finished: TC004_SearchUsersFunctionality : selectUserRole *********");
+	}
+	
+	@Test(priority =6, dependsOnMethods = {"login","clickUserManagementMenu","validateSearchFunctionality","validateClickOnAddbutton"})
+	public void validateAddUserFunctionality() throws InterruptedException
+	{
+		logger.info("******* Started: TC004_SearchUsersFunctionality : validateAddUserFunctionality *********");
+
+		AdminUserManagementPage ap = new AdminUserManagementPage(driver);
+		logger.info("Click on User Role dropdown");
+		ap.drpUserRole();
+		ap.selectUserRoleOption("Admin");
+		String employeeName = "Jobin Sam";
+		
+		//**************************************** Validation Pending***************************
+		logger.info("Enter Employee Name: " + employeeName);
+		ap.enterEmployeeName(employeeName);
+		String statusOption = "Enabled";
+		logger.info("Selecting Status: "+statusOption);
+		ap.selectStatusOption(statusOption);
+		logger.info("Enter Username: " + employeeName);
+		ap.enterUsername(employeeName);
+		String pwd ="admin@123";
+		logger.info("Entering Password: "+pwd);
+		ap.enterPassword(pwd);
+		logger.info("Entering Confirm Password: "+pwd);
+		ap.enterConfirmPassword(pwd);
+		ap.clickSaveButton();
+		logger.info("Save Button clicked successfully..");
+		
+		try 
+        {
+            logger.info("Checking if Employee Name '"+ employeeName +"' is present in the table.");
+
+            boolean isPresent = ap.isEmployeeNamePresent(employeeName);
+
+            if (isPresent) 
+            {
+                logger.info("Employee Name '"+employeeName+"' found successfully.");
+                Assert.assertTrue(true);
+            } else 
+            {
+                logger.error("Employee Name '"+employeeName+"' not found.");
+                Assert.fail("Employee Name '"+employeeName+"' not found.");
+            }
+
+            // Asserting to make the test fail if username not found
+            Assert.assertTrue(isPresent, "Employee Name '" + employeeName + "' was not found in the table.");
+
+        } catch (Exception e) {
+            logger.error("An error occurred while checking username presence: {}", e.getMessage());
+            Assert.fail("Test failed due to exception: " + e.getMessage());
+        }
+		logger.info("******* Finished: TC004_SearchUsersFunctionality : validateAddUserFunctionality *********");
+	}
 }

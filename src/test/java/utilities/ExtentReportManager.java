@@ -21,6 +21,9 @@ import org.testng.ITestResult;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.markuputils.ExtentColor;
+import com.aventstack.extentreports.markuputils.Markup;
+import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
@@ -29,17 +32,21 @@ import testBase.BaseClass;
 public class ExtentReportManager implements ITestListener 
 {
 
-    private ExtentReports extent;
+    public static ExtentReports extent;
     private ExtentSparkReporter sparkReporter;
     private ExtentTest test;
     private String reportName;
+    public String timeStamp;
+    private Map<String, List<ITestResult>> sortedResults = new TreeMap<>(); // TreeMap keeps order
 
     @Override
     public void onStart(ITestContext context) 
     {
-        String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
+        // Initialize Extent Report
+        timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
         reportName = "Test-Report-" + timeStamp + ".html";
 
+        // Create report directory if it doesn't exist
         sparkReporter = new ExtentSparkReporter("./reports/" + reportName);
 
         // Modern Theme
@@ -61,13 +68,13 @@ public class ExtentReportManager implements ITestListener
         	    "   content: ''; " +
         	    "   position: fixed; " +
         	    "   top: 0; left: 0; right: 0; bottom: 0; " +
-        	    "   background: url('logo.png') no-repeat center center; " +
-        	    "   background-size: 300px; " +
-        	    "   opacity: 0.05; " +
+        	    "   background: url('file:///" + System.getProperty("user.dir") + "/resources/logo.png') no-repeat center center fixed;" +
+        	    "   background-size: 300px 300px; " +
+        	    "   opacity: 0.1; " +
         	    "   z-index: -1; " +
         	    "}"
         	);
-
+        // Set report name     
         extent = new ExtentReports();
         extent.attachReporter(sparkReporter);
 
@@ -82,7 +89,7 @@ public class ExtentReportManager implements ITestListener
         extent.setSystemInfo("Operating System", context.getCurrentXmlTest().getParameter("os"));
         extent.setSystemInfo("Browser", context.getCurrentXmlTest().getParameter("browser"));
 
-        // Included Groups
+        // Get groups from the test context
         List<String> groups = context.getCurrentXmlTest().getIncludedGroups();
         if (!groups.isEmpty()) 
         {
@@ -93,29 +100,56 @@ public class ExtentReportManager implements ITestListener
     // This method will be called automatically on test case Success 
     @Override
     public void onTestSuccess(ITestResult result) 
-    {
-        logTest(result, Status.PASS, result.getMethod().getMethodName() + " executed successfully ✅");
+    {        
+    	String methodName = result.getMethod().getMethodName();
+    	logTest(result, Status.PASS, MarkupHelper.createLabel(methodName + ", EXECUTED SUCCESSFULLY ✅", ExtentColor.GREEN));
+        test.log(Status.INFO, "Test passed successfully.");
+        
+        try 
+        {
+	        // Get screenshot as Base64
+	        String base64Screenshot = new BaseClass().captureScreenAsBase64();
+	
+	        // Attach Base64 screenshot to Extent Report
+	        test.addScreenCaptureFromBase64String(base64Screenshot,"Screenshot: " + result.getMethod().getMethodName());
+		} catch (Exception e) {
+			System.err.println("Error while capturing screenshot: " + e.getMessage());
+			e.printStackTrace();
+		}
     }
-
+    
     // This method will be called automatically when the test case Failed 
     @Override
     public void onTestFailure(ITestResult result) 
     {
-        logTest(result, Status.FAIL, result.getMethod().getMethodName() + " failed ❌");
+    	String methodName = result.getMethod().getMethodName();
+        logTest(result, Status.FAIL, MarkupHelper.createLabel( methodName + ", FAILED ❌" , ExtentColor.RED));
         test.log(Status.INFO, result.getThrowable().getMessage());
         
         try 
         {
+        	/*// Capture screenshot and attach to Extent Report
             String imgPath = new BaseClass().captureScreen(
             		result.getTestClass().getRealClass().getSimpleName(),
             		result.getMethod().getMethodName());	
-            test.addScreenCaptureFromPath(imgPath);
-        } catch (IOException e) 
+            test.addScreenCaptureFromPath(imgPath);*/
+        	
+        	// Get screenshot as Base64
+            String base64Screenshot = new BaseClass().captureScreenAsBase64();
+
+            // Attach Base64 screenshot to Extent Report
+            test.addScreenCaptureFromBase64String(base64Screenshot,"Screenshot: " + result.getMethod().getMethodName());
+        } /*catch (IOException e) 
         {
+            // Use this exception if we want to capture screenshot and save it in a file
         	e.printStackTrace();
+        }*/ catch (Exception e) 
+        {
+            System.err.println("Error while capturing screenshot: " + e.getMessage());
+            e.printStackTrace();
         }
     }
-
+    
     // This method will be called automatically when the test case Skipped
     @Override
     public void onTestSkipped(ITestResult result) 
@@ -123,10 +157,11 @@ public class ExtentReportManager implements ITestListener
         String skipMessage = result.getThrowable() != null
                 ? result.getThrowable().getMessage()
                 : "Skipped without exception";
-        logTest(result, Status.SKIP, result.getMethod().getMethodName() + " skipped ⚠️");
+        
+        String methodName = result.getMethod().getMethodName();
+        logTest(result, Status.SKIP, MarkupHelper.createLabel(methodName + ", SKIPPED ⚠️" , ExtentColor.ORANGE));
         test.log(Status.INFO, skipMessage);
     }
-
   
     // This method will be called automatically on test case Finished
     @Override
@@ -150,10 +185,8 @@ public class ExtentReportManager implements ITestListener
     		System.err.println("Report file not found onFinish: " + reportFile.getAbsolutePath());
     	}
     }
-    
-    private Map<String, List<ITestResult>> sortedResults = new TreeMap<>(); // TreeMap keeps order
-    
-    private void logTest(ITestResult result, Status status, String message) {
+        
+    private void logTest(ITestResult result, Status status, Markup markup) {
     	    	
     	String className = result.getTestClass().getRealClass().getSimpleName();
         String methodName = result.getMethod().getMethodName();
@@ -182,9 +215,9 @@ public class ExtentReportManager implements ITestListener
         {
             test.assignCategory(result.getMethod().getGroups());
         }
-        test.log(status, message);
+        test.log(status, markup);
                 
-        // OR Send email automatically to the attached email
+        /*// OR Send email automatically to the attached email
         try 
         {            
             File reportFile = new File(System.getProperty("user.dir") + "\\reports\\" + reportName);
@@ -193,13 +226,15 @@ public class ExtentReportManager implements ITestListener
         	{
     	        try 
     	        {
+    	        	timeStamp =new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
+    	        	
     	        	ImageHtmlEmail email = new ImageHtmlEmail();
     	            email.setHostName("smtp.googlemail.com");
     	            email.setSmtpPort(465);
-    	            email.setAuthenticator(new DefaultAuthenticator("pushkalshripad01@gmail.com", "Pushkal@1987"));
+    	            email.setAuthenticator(new DefaultAuthenticator("pushkalshripad01@gmail.com", "password"));
     	            email.setSSLOnConnect(true);
     	            email.setFrom("pushkal@gmail.com");
-    	            email.setSubject("Test Results");
+    	            email.setSubject("Test Results for Date: "+ timeStamp);
     	            email.setMsg("Please find attached report");
     	            email.addTo("pushkalshripad11@gmail.com");
     	
@@ -223,6 +258,6 @@ public class ExtentReportManager implements ITestListener
         } catch (Exception e) 
         {
             e.printStackTrace();
-        }       
+        } */     
     }
 }

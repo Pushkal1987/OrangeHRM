@@ -3,15 +3,21 @@
   <groupId>TestAutomation</groupId>
   <artifactId>TestAutomation</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  
-  
+    
   <dependencies>
 		
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
 		    <groupId>org.seleniumhq.selenium</groupId>
 		    <artifactId>selenium-java</artifactId>
-		    <version>4.33.0</version>
+		    <version>4.35.0</version>	<!-- Supports newer CDP versions -->
+		</dependency>
+		
+		<!-- Keeps driver in sync automatically -->
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>5.4.1</version> 
 		</dependency>
 		
 		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
@@ -84,6 +90,12 @@
 		    <groupId>org.apache.commons</groupId>
 		    <artifactId>commons-email</artifactId>
 		    <version>1.6.0</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-text</artifactId>
+		    <version>1.10.0</version>
 		</dependency>
 		
   </dependencies>
