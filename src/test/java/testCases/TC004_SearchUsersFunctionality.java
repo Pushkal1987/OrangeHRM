@@ -18,7 +18,7 @@ public class TC004_SearchUsersFunctionality extends BaseClass{
 		boolean isLoginSuccessful = false;
 		try
 		{
-			LoginPage lp = 	new LoginPage(driver);
+			LoginPage lp = 	new LoginPage(getDriver());
 			String username = p.getProperty("username");	// get username data from properties file
 			String password = p.getProperty("password");	// get password data from properties file
 			logger.info("Entering username: " + username);
@@ -29,7 +29,7 @@ public class TC004_SearchUsersFunctionality extends BaseClass{
 			lp.clickLogin();
 			
 			//Add a verification step to confirm login
-	        DashboardPage dp = new DashboardPage(driver);
+	        DashboardPage dp = new DashboardPage(getDriver());
 	        isLoginSuccessful = dp.isTimeAtWorkExist(); // some element visible only after successful login
 	        
 	        if (isLoginSuccessful) 
@@ -56,10 +56,10 @@ public class TC004_SearchUsersFunctionality extends BaseClass{
 		
 		try
 		{
-			DashboardPage dp = new DashboardPage(driver);
+			DashboardPage dp = new DashboardPage(getDriver());
 			logger.info("Click on Admin Menu");
 			dp.menuSelection("Admin");
-			AdminUserManagementPage ap = new AdminUserManagementPage(driver);
+			AdminUserManagementPage ap = new AdminUserManagementPage(getDriver());
 			logger.info("Click on User Management dropdown");
 			ap.clickUserManagement();
 			
@@ -91,7 +91,7 @@ public class TC004_SearchUsersFunctionality extends BaseClass{
 	{
 		logger.info("******* Started: TC004_SearchUsersFunctionality : testTableData *********");
 			
-		AdminUserManagementPage ap = new AdminUserManagementPage(driver);
+		AdminUserManagementPage ap = new AdminUserManagementPage(getDriver());
 		int rowCount = ap.getRowCount();
 		logger.info("Rows counts are: "+rowCount);
 				
@@ -104,7 +104,7 @@ public class TC004_SearchUsersFunctionality extends BaseClass{
 	{
 		logger.info("******* Started: TC004_SearchUsersFunctionality : validateSearchFunctionality *********");
 		
-		AdminUserManagementPage ap = new AdminUserManagementPage(driver);
+		AdminUserManagementPage ap = new AdminUserManagementPage(getDriver());
 		String expectedUsername = p.getProperty("creatUser");
 		
 		logger.info("Enter User Name: "+ expectedUsername);
@@ -147,7 +147,7 @@ public class TC004_SearchUsersFunctionality extends BaseClass{
 		
 		try
 		{		
-			AdminUserManagementPage ap = new AdminUserManagementPage(driver);
+			AdminUserManagementPage ap = new AdminUserManagementPage(getDriver());
 			
 			logger.info("Clicking on Add button");
 			ap.clickAddButton();
@@ -177,7 +177,7 @@ public class TC004_SearchUsersFunctionality extends BaseClass{
 	public void selectUserRole()
 	{
 		logger.info("******* Started: TC004_SearchUsersFunctionality : selectUserRole *********");
-		AdminUserManagementPage ap = new AdminUserManagementPage(driver);
+		AdminUserManagementPage ap = new AdminUserManagementPage(getDriver());
 		logger.info("Click on User Role dropdown");
 		ap.drpUserRole();
 		logger.info("Select User Role option 'ESS'");
@@ -203,7 +203,7 @@ public class TC004_SearchUsersFunctionality extends BaseClass{
 	{
 		logger.info("******* Started: TC004_SearchUsersFunctionality : validateAddUserFunctionality *********");
 
-		AdminUserManagementPage ap = new AdminUserManagementPage(driver);
+		AdminUserManagementPage ap = new AdminUserManagementPage(getDriver());
 		logger.info("Click on User Role dropdown");
 		ap.drpUserRole();
 		ap.selectUserRoleOption("Admin");

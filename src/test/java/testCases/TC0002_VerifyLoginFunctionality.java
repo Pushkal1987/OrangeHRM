@@ -31,10 +31,10 @@ public class TC0002_VerifyLoginFunctionality extends BaseClass
 		try 
 		{
 			// Refresh the page to ensure a clean state before starting the test
-			driver.navigate().refresh();
+			getDriver().navigate().refresh();
 			
 			// Fetching username and password from DataProvider
-			LoginPage loginPage = new LoginPage(driver);
+			LoginPage loginPage = new LoginPage(getDriver());
 			logger.info("Entering username:- " + username);
 			loginPage.enterUsername(username);
 			logger.info("Entering password:- "+ password);
@@ -43,7 +43,7 @@ public class TC0002_VerifyLoginFunctionality extends BaseClass
 			loginPage.clickLogin();
 					
 			// After clicking login, we check if the dashboard page is loaded
-			DashboardPage dashboardPage = new 	DashboardPage(driver);	
+			DashboardPage dashboardPage = new 	DashboardPage(getDriver());	
 			logger.info("Checking if Dashboard is loaded...");
 			// isTimeAtWorkExist() method checks if the target page is loaded
 			boolean targetPage = dashboardPage.isTimeAtWorkExist();
@@ -122,8 +122,8 @@ public class TC0002_VerifyLoginFunctionality extends BaseClass
 		try 
 		{
 			// Refresh the page to ensure a clean state before starting the test
-			driver.navigate().refresh();
-			LoginPage loginPage = new LoginPage(driver);
+			getDriver().navigate().refresh();
+			LoginPage loginPage = new LoginPage(getDriver());
 			
 			// Fetch invalid credentials from properties file
 			String invalidUsername = p.getProperty("invalidUsername");

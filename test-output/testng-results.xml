@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="15" passed="13" failed="2" skipped="0">
+<testng-results ignored="0" total="54" passed="40" failed="7" skipped="7">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-23T18:15:23 IST" name="Suite" finished-at="2025-08-23T18:15:41 IST" duration-ms="18411">
+  <suite started-at="2025-08-30T17:26:46 IST" name="Suite" finished-at="2025-08-30T17:29:16 IST" duration-ms="150779">
     <groups>
     </groups>
-    <test started-at="2025-08-23T18:15:23 IST" name="chrometest" finished-at="2025-08-23T18:15:41 IST" duration-ms="18411">
-      <class name="testCases.TC0003_VerifyMenuPanel">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC0003_VerifyMenuPanel@63475ace]" started-at="2025-08-23T18:15:23 IST" name="setup" finished-at="2025-08-23T18:15:28 IST" duration-ms="5556" status="PASS">
+    <test started-at="2025-08-30T17:26:46 IST" name="chrometest" finished-at="2025-08-30T17:29:16 IST" duration-ms="150779">
+      <class name="testCases.TestCaseWithStepsAlongWithScreenshotsInExtentReport">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TestCaseWithStepsAlongWithScreenshotsInExtentReport@6a2f6f80]" started-at="2025-08-30T17:26:46 IST" name="setup" finished-at="2025-08-30T17:26:51 IST" duration-ms="4618" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,15 +23,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginWithValidCredentials()[pri:0, instance:testCases.TC0003_VerifyMenuPanel@63475ace]" started-at="2025-08-23T18:15:29 IST" name="loginWithValidCredentials" description="Login with valid credentials" finished-at="2025-08-23T18:15:31 IST" duration-ms="2862" status="PASS">
+        <test-method signature="loginWithValidCredentials()[pri:0, instance:testCases.TestCaseWithStepsAlongWithScreenshotsInExtentReport@6a2f6f80]" started-at="2025-08-30T17:26:51 IST" name="loginWithValidCredentials" description="Login with valid credentials" finished-at="2025-08-30T17:26:54 IST" duration-ms="3461" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithValidCredentials -->
-        <test-method signature="verifyLogoOnMenuPanel()[pri:1, instance:testCases.TC0003_VerifyMenuPanel@63475ace]" started-at="2025-08-23T18:15:32 IST" name="verifyLogoOnMenuPanel" description="Verify the presence of the logo on the menu panel" finished-at="2025-08-23T18:15:32 IST" depends-on-methods="testCases.TC0003_VerifyMenuPanel.loginWithValidCredentials" duration-ms="106" status="PASS">
+        <test-method signature="verifyLogoOnMenuPanel()[pri:1, instance:testCases.TestCaseWithStepsAlongWithScreenshotsInExtentReport@6a2f6f80]" started-at="2025-08-30T17:26:54 IST" name="verifyLogoOnMenuPanel" description="Verify the presence of the logo on the menu panel" finished-at="2025-08-30T17:26:56 IST" depends-on-methods="testCases.TestCaseWithStepsAlongWithScreenshotsInExtentReport.loginWithValidCredentials" duration-ms="1265" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogoOnMenuPanel -->
-        <test-method signature="verifyAllAvailableMenuOptionsOnMenuPanel(java.lang.String)[pri:2, instance:testCases.TC0003_VerifyMenuPanel@63475ace]" started-at="2025-08-23T18:15:34 IST" name="verifyAllAvailableMenuOptionsOnMenuPanel" description="Verify available menu options in the menu panel" data-provider="MenuListData" finished-at="2025-08-23T18:15:34 IST" depends-on-methods="testCases.TC0003_VerifyMenuPanel.loginWithValidCredentials" duration-ms="61" status="PASS">
+        <test-method signature="verifyAllAvailableMenuOptionsOnMenuPanel(java.lang.String)[pri:2, instance:testCases.TestCaseWithStepsAlongWithScreenshotsInExtentReport@6a2f6f80]" started-at="2025-08-30T17:26:57 IST" name="verifyAllAvailableMenuOptionsOnMenuPanel" description="Verify available menu options in the menu panel" data-provider="MenuListData" finished-at="2025-08-30T17:26:58 IST" depends-on-methods="testCases.TestCaseWithStepsAlongWithScreenshotsInExtentReport.loginWithValidCredentials" duration-ms="724" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -42,7 +42,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAllAvailableMenuOptionsOnMenuPanel -->
-        <test-method signature="verifyAllAvailableMenuOptionsOnMenuPanel(java.lang.String)[pri:2, instance:testCases.TC0003_VerifyMenuPanel@63475ace]" started-at="2025-08-23T18:15:34 IST" name="verifyAllAvailableMenuOptionsOnMenuPanel" description="Verify available menu options in the menu panel" data-provider="MenuListData" finished-at="2025-08-23T18:15:34 IST" depends-on-methods="testCases.TC0003_VerifyMenuPanel.loginWithValidCredentials" duration-ms="82" status="PASS">
+        <test-method signature="verifyAllAvailableMenuOptionsOnMenuPanel(java.lang.String)[pri:2, instance:testCases.TestCaseWithStepsAlongWithScreenshotsInExtentReport@6a2f6f80]" started-at="2025-08-30T17:26:58 IST" name="verifyAllAvailableMenuOptionsOnMenuPanel" description="Verify available menu options in the menu panel" data-provider="MenuListData" finished-at="2025-08-30T17:26:58 IST" depends-on-methods="testCases.TestCaseWithStepsAlongWithScreenshotsInExtentReport.loginWithValidCredentials" duration-ms="699" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,7 +53,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAllAvailableMenuOptionsOnMenuPanel -->
-        <test-method signature="verifyAllAvailableMenuOptionsOnMenuPanel(java.lang.String)[pri:2, instance:testCases.TC0003_VerifyMenuPanel@63475ace]" started-at="2025-08-23T18:15:34 IST" name="verifyAllAvailableMenuOptionsOnMenuPanel" description="Verify available menu options in the menu panel" data-provider="MenuListData" finished-at="2025-08-23T18:15:35 IST" depends-on-methods="testCases.TC0003_VerifyMenuPanel.loginWithValidCredentials" duration-ms="286" status="FAIL">
+        <test-method signature="verifyAllAvailableMenuOptionsOnMenuPanel(java.lang.String)[pri:2, instance:testCases.TestCaseWithStepsAlongWithScreenshotsInExtentReport@6a2f6f80]" started-at="2025-08-30T17:26:59 IST" name="verifyAllAvailableMenuOptionsOnMenuPanel" description="Verify available menu options in the menu panel" data-provider="MenuListData" finished-at="2025-08-30T17:26:59 IST" depends-on-methods="testCases.TestCaseWithStepsAlongWithScreenshotsInExtentReport.loginWithValidCredentials" duration-ms="832" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -68,7 +68,7 @@
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Menu option 'Leavea' is not available in the menu panel.
 at org.testng.Assert.fail(Assert.java:111)
-at testCases.TC0003_VerifyMenuPanel.verifyAllAvailableMenuOptionsOnMenuPanel(TC0003_VerifyMenuPanel.java:127)
+at testCases.TestCaseWithStepsAlongWithScreenshotsInExtentReport.verifyAllAvailableMenuOptionsOnMenuPanel(TestCaseWithStepsAlongWithScreenshotsInExtentReport.java:150)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -101,7 +101,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAllAvailableMenuOptionsOnMenuPanel -->
-        <test-method signature="verifyAllAvailableMenuOptionsOnMenuPanel(java.lang.String)[pri:2, instance:testCases.TC0003_VerifyMenuPanel@63475ace]" started-at="2025-08-23T18:15:35 IST" name="verifyAllAvailableMenuOptionsOnMenuPanel" description="Verify available menu options in the menu panel" data-provider="MenuListData" finished-at="2025-08-23T18:15:35 IST" depends-on-methods="testCases.TC0003_VerifyMenuPanel.loginWithValidCredentials" duration-ms="102" status="PASS">
+        <test-method signature="verifyAllAvailableMenuOptionsOnMenuPanel(java.lang.String)[pri:2, instance:testCases.TestCaseWithStepsAlongWithScreenshotsInExtentReport@6a2f6f80]" started-at="2025-08-30T17:27:00 IST" name="verifyAllAvailableMenuOptionsOnMenuPanel" description="Verify available menu options in the menu panel" data-provider="MenuListData" finished-at="2025-08-30T17:27:00 IST" depends-on-methods="testCases.TestCaseWithStepsAlongWithScreenshotsInExtentReport.loginWithValidCredentials" duration-ms="837" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -112,7 +112,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAllAvailableMenuOptionsOnMenuPanel -->
-        <test-method signature="verifyAllAvailableMenuOptionsOnMenuPanel(java.lang.String)[pri:2, instance:testCases.TC0003_VerifyMenuPanel@63475ace]" started-at="2025-08-23T18:15:35 IST" name="verifyAllAvailableMenuOptionsOnMenuPanel" description="Verify available menu options in the menu panel" data-provider="MenuListData" finished-at="2025-08-23T18:15:35 IST" depends-on-methods="testCases.TC0003_VerifyMenuPanel.loginWithValidCredentials" duration-ms="118" status="PASS">
+        <test-method signature="verifyAllAvailableMenuOptionsOnMenuPanel(java.lang.String)[pri:2, instance:testCases.TestCaseWithStepsAlongWithScreenshotsInExtentReport@6a2f6f80]" started-at="2025-08-30T17:27:01 IST" name="verifyAllAvailableMenuOptionsOnMenuPanel" description="Verify available menu options in the menu panel" data-provider="MenuListData" finished-at="2025-08-30T17:27:01 IST" depends-on-methods="testCases.TestCaseWithStepsAlongWithScreenshotsInExtentReport.loginWithValidCredentials" duration-ms="818" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -123,7 +123,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAllAvailableMenuOptionsOnMenuPanel -->
-        <test-method signature="verifyAllAvailableMenuOptionsOnMenuPanel(java.lang.String)[pri:2, instance:testCases.TC0003_VerifyMenuPanel@63475ace]" started-at="2025-08-23T18:15:35 IST" name="verifyAllAvailableMenuOptionsOnMenuPanel" description="Verify available menu options in the menu panel" data-provider="MenuListData" finished-at="2025-08-23T18:15:36 IST" depends-on-methods="testCases.TC0003_VerifyMenuPanel.loginWithValidCredentials" duration-ms="195" status="PASS">
+        <test-method signature="verifyAllAvailableMenuOptionsOnMenuPanel(java.lang.String)[pri:2, instance:testCases.TestCaseWithStepsAlongWithScreenshotsInExtentReport@6a2f6f80]" started-at="2025-08-30T17:27:02 IST" name="verifyAllAvailableMenuOptionsOnMenuPanel" description="Verify available menu options in the menu panel" data-provider="MenuListData" finished-at="2025-08-30T17:27:02 IST" depends-on-methods="testCases.TestCaseWithStepsAlongWithScreenshotsInExtentReport.loginWithValidCredentials" duration-ms="838" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -134,7 +134,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAllAvailableMenuOptionsOnMenuPanel -->
-        <test-method signature="verifyAllAvailableMenuOptionsOnMenuPanel(java.lang.String)[pri:2, instance:testCases.TC0003_VerifyMenuPanel@63475ace]" started-at="2025-08-23T18:15:36 IST" name="verifyAllAvailableMenuOptionsOnMenuPanel" description="Verify available menu options in the menu panel" data-provider="MenuListData" finished-at="2025-08-23T18:15:36 IST" depends-on-methods="testCases.TC0003_VerifyMenuPanel.loginWithValidCredentials" duration-ms="141" status="PASS">
+        <test-method signature="verifyAllAvailableMenuOptionsOnMenuPanel(java.lang.String)[pri:2, instance:testCases.TestCaseWithStepsAlongWithScreenshotsInExtentReport@6a2f6f80]" started-at="2025-08-30T17:27:03 IST" name="verifyAllAvailableMenuOptionsOnMenuPanel" description="Verify available menu options in the menu panel" data-provider="MenuListData" finished-at="2025-08-30T17:27:04 IST" depends-on-methods="testCases.TestCaseWithStepsAlongWithScreenshotsInExtentReport.loginWithValidCredentials" duration-ms="946" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -145,7 +145,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAllAvailableMenuOptionsOnMenuPanel -->
-        <test-method signature="verifyAllAvailableMenuOptionsOnMenuPanel(java.lang.String)[pri:2, instance:testCases.TC0003_VerifyMenuPanel@63475ace]" started-at="2025-08-23T18:15:36 IST" name="verifyAllAvailableMenuOptionsOnMenuPanel" description="Verify available menu options in the menu panel" data-provider="MenuListData" finished-at="2025-08-23T18:15:36 IST" depends-on-methods="testCases.TC0003_VerifyMenuPanel.loginWithValidCredentials" duration-ms="257" status="PASS">
+        <test-method signature="verifyAllAvailableMenuOptionsOnMenuPanel(java.lang.String)[pri:2, instance:testCases.TestCaseWithStepsAlongWithScreenshotsInExtentReport@6a2f6f80]" started-at="2025-08-30T17:27:04 IST" name="verifyAllAvailableMenuOptionsOnMenuPanel" description="Verify available menu options in the menu panel" data-provider="MenuListData" finished-at="2025-08-30T17:27:05 IST" depends-on-methods="testCases.TestCaseWithStepsAlongWithScreenshotsInExtentReport.loginWithValidCredentials" duration-ms="971" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -156,7 +156,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAllAvailableMenuOptionsOnMenuPanel -->
-        <test-method signature="verifyAllAvailableMenuOptionsOnMenuPanel(java.lang.String)[pri:2, instance:testCases.TC0003_VerifyMenuPanel@63475ace]" started-at="2025-08-23T18:15:36 IST" name="verifyAllAvailableMenuOptionsOnMenuPanel" description="Verify available menu options in the menu panel" data-provider="MenuListData" finished-at="2025-08-23T18:15:37 IST" depends-on-methods="testCases.TC0003_VerifyMenuPanel.loginWithValidCredentials" duration-ms="273" status="PASS">
+        <test-method signature="verifyAllAvailableMenuOptionsOnMenuPanel(java.lang.String)[pri:2, instance:testCases.TestCaseWithStepsAlongWithScreenshotsInExtentReport@6a2f6f80]" started-at="2025-08-30T17:27:05 IST" name="verifyAllAvailableMenuOptionsOnMenuPanel" description="Verify available menu options in the menu panel" data-provider="MenuListData" finished-at="2025-08-30T17:27:06 IST" depends-on-methods="testCases.TestCaseWithStepsAlongWithScreenshotsInExtentReport.loginWithValidCredentials" duration-ms="888" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -167,7 +167,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAllAvailableMenuOptionsOnMenuPanel -->
-        <test-method signature="verifyAllAvailableMenuOptionsOnMenuPanel(java.lang.String)[pri:2, instance:testCases.TC0003_VerifyMenuPanel@63475ace]" started-at="2025-08-23T18:15:37 IST" name="verifyAllAvailableMenuOptionsOnMenuPanel" description="Verify available menu options in the menu panel" data-provider="MenuListData" finished-at="2025-08-23T18:15:37 IST" depends-on-methods="testCases.TC0003_VerifyMenuPanel.loginWithValidCredentials" duration-ms="302" status="PASS">
+        <test-method signature="verifyAllAvailableMenuOptionsOnMenuPanel(java.lang.String)[pri:2, instance:testCases.TestCaseWithStepsAlongWithScreenshotsInExtentReport@6a2f6f80]" started-at="2025-08-30T17:27:06 IST" name="verifyAllAvailableMenuOptionsOnMenuPanel" description="Verify available menu options in the menu panel" data-provider="MenuListData" finished-at="2025-08-30T17:27:07 IST" depends-on-methods="testCases.TestCaseWithStepsAlongWithScreenshotsInExtentReport.loginWithValidCredentials" duration-ms="926" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -178,7 +178,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAllAvailableMenuOptionsOnMenuPanel -->
-        <test-method signature="verifyAllAvailableMenuOptionsOnMenuPanel(java.lang.String)[pri:2, instance:testCases.TC0003_VerifyMenuPanel@63475ace]" started-at="2025-08-23T18:15:37 IST" name="verifyAllAvailableMenuOptionsOnMenuPanel" description="Verify available menu options in the menu panel" data-provider="MenuListData" finished-at="2025-08-23T18:15:38 IST" depends-on-methods="testCases.TC0003_VerifyMenuPanel.loginWithValidCredentials" duration-ms="275" status="FAIL">
+        <test-method signature="verifyAllAvailableMenuOptionsOnMenuPanel(java.lang.String)[pri:2, instance:testCases.TestCaseWithStepsAlongWithScreenshotsInExtentReport@6a2f6f80]" started-at="2025-08-30T17:27:07 IST" name="verifyAllAvailableMenuOptionsOnMenuPanel" description="Verify available menu options in the menu panel" data-provider="MenuListData" finished-at="2025-08-30T17:27:08 IST" depends-on-methods="testCases.TestCaseWithStepsAlongWithScreenshotsInExtentReport.loginWithValidCredentials" duration-ms="777" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -193,7 +193,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Menu option 'Claima' is not available in the menu panel.
 at org.testng.Assert.fail(Assert.java:111)
-at testCases.TC0003_VerifyMenuPanel.verifyAllAvailableMenuOptionsOnMenuPanel(TC0003_VerifyMenuPanel.java:127)
+at testCases.TestCaseWithStepsAlongWithScreenshotsInExtentReport.verifyAllAvailableMenuOptionsOnMenuPanel(TestCaseWithStepsAlongWithScreenshotsInExtentReport.java:150)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -226,7 +226,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAllAvailableMenuOptionsOnMenuPanel -->
-        <test-method signature="verifyAllAvailableMenuOptionsOnMenuPanel(java.lang.String)[pri:2, instance:testCases.TC0003_VerifyMenuPanel@63475ace]" started-at="2025-08-23T18:15:38 IST" name="verifyAllAvailableMenuOptionsOnMenuPanel" description="Verify available menu options in the menu panel" data-provider="MenuListData" finished-at="2025-08-23T18:15:38 IST" depends-on-methods="testCases.TC0003_VerifyMenuPanel.loginWithValidCredentials" duration-ms="284" status="PASS">
+        <test-method signature="verifyAllAvailableMenuOptionsOnMenuPanel(java.lang.String)[pri:2, instance:testCases.TestCaseWithStepsAlongWithScreenshotsInExtentReport@6a2f6f80]" started-at="2025-08-30T17:27:08 IST" name="verifyAllAvailableMenuOptionsOnMenuPanel" description="Verify available menu options in the menu panel" data-provider="MenuListData" finished-at="2025-08-30T17:27:09 IST" depends-on-methods="testCases.TestCaseWithStepsAlongWithScreenshotsInExtentReport.loginWithValidCredentials" duration-ms="996" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -237,15 +237,922 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAllAvailableMenuOptionsOnMenuPanel -->
-        <test-method signature="verifySearchBoxFunctionality()[pri:3, instance:testCases.TC0003_VerifyMenuPanel@63475ace]" started-at="2025-08-23T18:15:38 IST" name="verifySearchBoxFunctionality" description="Verify Search Box functionality in the menu panel" finished-at="2025-08-23T18:15:39 IST" depends-on-methods="testCases.TC0003_VerifyMenuPanel.loginWithValidCredentials" duration-ms="302" status="PASS">
+        <test-method signature="verifySearchBoxFunctionality()[pri:3, instance:testCases.TestCaseWithStepsAlongWithScreenshotsInExtentReport@6a2f6f80]" started-at="2025-08-30T17:27:09 IST" name="verifySearchBoxFunctionality" description="Verify Search Box functionality in the menu panel" finished-at="2025-08-30T17:27:11 IST" depends-on-methods="testCases.TestCaseWithStepsAlongWithScreenshotsInExtentReport.loginWithValidCredentials" duration-ms="1480" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchBoxFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC0003_VerifyMenuPanel@63475ace]" started-at="2025-08-23T18:15:39 IST" name="tearDown" finished-at="2025-08-23T18:15:41 IST" duration-ms="2252" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TestCaseWithStepsAlongWithScreenshotsInExtentReport@6a2f6f80]" started-at="2025-08-30T17:27:11 IST" name="tearDown" finished-at="2025-08-30T17:27:13 IST" duration-ms="2311" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC0003_VerifyMenuPanel -->
+      </class> <!-- testCases.TestCaseWithStepsAlongWithScreenshotsInExtentReport -->
+      <class name="testCases.TC003_ValidateAdminMainPage">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC003_ValidateAdminMainPage@2e377400]" started-at="2025-08-30T17:27:59 IST" name="setup" finished-at="2025-08-30T17:28:03 IST" duration-ms="4024" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="login()[pri:1, instance:testCases.TC003_ValidateAdminMainPage@2e377400]" started-at="2025-08-30T17:28:03 IST" name="login" finished-at="2025-08-30T17:28:03 IST" duration-ms="485" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test failed due to exception: Keys to send should be a not null CharSequence]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test failed due to exception: Keys to send should be a not null CharSequence
+at org.testng.Assert.fail(Assert.java:111)
+at testCases.TC003_ValidateAdminMainPage.login(TC003_ValidateAdminMainPage.java:49)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="clickAdminMenu()[pri:2, instance:testCases.TC003_ValidateAdminMainPage@2e377400]" started-at="2025-08-30T17:28:03 IST" name="clickAdminMenu" finished-at="2025-08-30T17:28:03 IST" depends-on-methods="testCases.TC003_ValidateAdminMainPage.login" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method testCases.TC003_ValidateAdminMainPage.clickAdminMenu() on instance testCases.TC003_ValidateAdminMainPage@2e377400 depends on not successfully finished methods 
+[testCases.TC003_ValidateAdminMainPage.login() on instance testCases.TC003_ValidateAdminMainPage@2e377400]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method testCases.TC003_ValidateAdminMainPage.clickAdminMenu() on instance testCases.TC003_ValidateAdminMainPage@2e377400 depends on not successfully finished methods 
+[testCases.TC003_ValidateAdminMainPage.login() on instance testCases.TC003_ValidateAdminMainPage@2e377400]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickAdminMenu -->
+        <test-method signature="verifySystemUser()[pri:3, instance:testCases.TC003_ValidateAdminMainPage@2e377400]" started-at="2025-08-30T17:28:03 IST" name="verifySystemUser" finished-at="2025-08-30T17:28:03 IST" depends-on-methods="testCases.TC003_ValidateAdminMainPage.login, testCases.TC003_ValidateAdminMainPage.clickAdminMenu" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method testCases.TC003_ValidateAdminMainPage.verifySystemUser() on instance testCases.TC003_ValidateAdminMainPage@2e377400 depends on not successfully finished methods 
+[testCases.TC003_ValidateAdminMainPage.login() on instance testCases.TC003_ValidateAdminMainPage@2e377400
+testCases.TC003_ValidateAdminMainPage.clickAdminMenu() on instance testCases.TC003_ValidateAdminMainPage@2e377400]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method testCases.TC003_ValidateAdminMainPage.verifySystemUser() on instance testCases.TC003_ValidateAdminMainPage@2e377400 depends on not successfully finished methods 
+[testCases.TC003_ValidateAdminMainPage.login() on instance testCases.TC003_ValidateAdminMainPage@2e377400
+testCases.TC003_ValidateAdminMainPage.clickAdminMenu() on instance testCases.TC003_ValidateAdminMainPage@2e377400]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySystemUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC003_ValidateAdminMainPage@2e377400]" started-at="2025-08-30T17:28:03 IST" name="tearDown" finished-at="2025-08-30T17:28:06 IST" duration-ms="2172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC003_ValidateAdminMainPage -->
+      <class name="testCases.TC001_ValidateHomePage">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC001_ValidateHomePage@7494f96a]" started-at="2025-08-30T17:27:13 IST" name="setup" finished-at="2025-08-30T17:27:17 IST" duration-ms="4295" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyTitle()[pri:1, instance:testCases.TC001_ValidateHomePage@7494f96a]" started-at="2025-08-30T17:27:17 IST" name="verifyTitle" finished-at="2025-08-30T17:27:18 IST" duration-ms="27" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitle -->
+        <test-method signature="verifyLogo()[pri:2, instance:testCases.TC001_ValidateHomePage@7494f96a]" started-at="2025-08-30T17:27:18 IST" name="verifyLogo" finished-at="2025-08-30T17:27:20 IST" duration-ms="1932" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogo -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC001_ValidateHomePage@7494f96a]" started-at="2025-08-30T17:27:20 IST" name="tearDown" finished-at="2025-08-30T17:27:22 IST" duration-ms="2272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC001_ValidateHomePage -->
+      <class name="testCases.TC0003_VerifyAvailableMenuOnMenuPanel">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC0003_VerifyAvailableMenuOnMenuPanel@5c671d7f]" started-at="2025-08-30T17:29:00 IST" name="setup" finished-at="2025-08-30T17:29:06 IST" duration-ms="5954" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginWithValidCredentials()[pri:0, instance:testCases.TC0003_VerifyAvailableMenuOnMenuPanel@5c671d7f]" started-at="2025-08-30T17:29:06 IST" name="loginWithValidCredentials" description="Login with valid credentials" finished-at="2025-08-30T17:29:09 IST" duration-ms="2864" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidCredentials -->
+        <test-method signature="verifyLogoOnMenuPanel()[pri:1, instance:testCases.TC0003_VerifyAvailableMenuOnMenuPanel@5c671d7f]" started-at="2025-08-30T17:29:09 IST" name="verifyLogoOnMenuPanel" description="Verify the presence of the logo on the menu panel" finished-at="2025-08-30T17:29:09 IST" depends-on-methods="testCases.TC0003_VerifyAvailableMenuOnMenuPanel.loginWithValidCredentials" duration-ms="94" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogoOnMenuPanel -->
+        <test-method signature="verifyAllAvailableMenuOptionsOnMenuPanel(java.lang.String)[pri:2, instance:testCases.TC0003_VerifyAvailableMenuOnMenuPanel@5c671d7f]" started-at="2025-08-30T17:29:10 IST" name="verifyAllAvailableMenuOptionsOnMenuPanel" description="Verify available menu options in the menu panel" data-provider="MenuListData" finished-at="2025-08-30T17:29:10 IST" depends-on-methods="testCases.TC0003_VerifyAvailableMenuOnMenuPanel.loginWithValidCredentials" duration-ms="57" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllAvailableMenuOptionsOnMenuPanel -->
+        <test-method signature="verifyAllAvailableMenuOptionsOnMenuPanel(java.lang.String)[pri:2, instance:testCases.TC0003_VerifyAvailableMenuOnMenuPanel@5c671d7f]" started-at="2025-08-30T17:29:10 IST" name="verifyAllAvailableMenuOptionsOnMenuPanel" description="Verify available menu options in the menu panel" data-provider="MenuListData" finished-at="2025-08-30T17:29:10 IST" depends-on-methods="testCases.TC0003_VerifyAvailableMenuOnMenuPanel.loginWithValidCredentials" duration-ms="63" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[PIM]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllAvailableMenuOptionsOnMenuPanel -->
+        <test-method signature="verifyAllAvailableMenuOptionsOnMenuPanel(java.lang.String)[pri:2, instance:testCases.TC0003_VerifyAvailableMenuOnMenuPanel@5c671d7f]" started-at="2025-08-30T17:29:10 IST" name="verifyAllAvailableMenuOptionsOnMenuPanel" description="Verify available menu options in the menu panel" data-provider="MenuListData" finished-at="2025-08-30T17:29:11 IST" depends-on-methods="testCases.TC0003_VerifyAvailableMenuOnMenuPanel.loginWithValidCredentials" duration-ms="243" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Leavea]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Menu option 'Leavea' is not available in the menu panel.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Menu option 'Leavea' is not available in the menu panel.
+at org.testng.Assert.fail(Assert.java:111)
+at testCases.TC0003_VerifyAvailableMenuOnMenuPanel.verifyAllAvailableMenuOptionsOnMenuPanel(TC0003_VerifyAvailableMenuOnMenuPanel.java:131)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllAvailableMenuOptionsOnMenuPanel -->
+        <test-method signature="verifyAllAvailableMenuOptionsOnMenuPanel(java.lang.String)[pri:2, instance:testCases.TC0003_VerifyAvailableMenuOnMenuPanel@5c671d7f]" started-at="2025-08-30T17:29:11 IST" name="verifyAllAvailableMenuOptionsOnMenuPanel" description="Verify available menu options in the menu panel" data-provider="MenuListData" finished-at="2025-08-30T17:29:11 IST" depends-on-methods="testCases.TC0003_VerifyAvailableMenuOnMenuPanel.loginWithValidCredentials" duration-ms="85" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Time]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllAvailableMenuOptionsOnMenuPanel -->
+        <test-method signature="verifyAllAvailableMenuOptionsOnMenuPanel(java.lang.String)[pri:2, instance:testCases.TC0003_VerifyAvailableMenuOnMenuPanel@5c671d7f]" started-at="2025-08-30T17:29:11 IST" name="verifyAllAvailableMenuOptionsOnMenuPanel" description="Verify available menu options in the menu panel" data-provider="MenuListData" finished-at="2025-08-30T17:29:11 IST" depends-on-methods="testCases.TC0003_VerifyAvailableMenuOnMenuPanel.loginWithValidCredentials" duration-ms="82" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Recruitment]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllAvailableMenuOptionsOnMenuPanel -->
+        <test-method signature="verifyAllAvailableMenuOptionsOnMenuPanel(java.lang.String)[pri:2, instance:testCases.TC0003_VerifyAvailableMenuOnMenuPanel@5c671d7f]" started-at="2025-08-30T17:29:11 IST" name="verifyAllAvailableMenuOptionsOnMenuPanel" description="Verify available menu options in the menu panel" data-provider="MenuListData" finished-at="2025-08-30T17:29:12 IST" depends-on-methods="testCases.TC0003_VerifyAvailableMenuOnMenuPanel.loginWithValidCredentials" duration-ms="89" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[My Info]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllAvailableMenuOptionsOnMenuPanel -->
+        <test-method signature="verifyAllAvailableMenuOptionsOnMenuPanel(java.lang.String)[pri:2, instance:testCases.TC0003_VerifyAvailableMenuOnMenuPanel@5c671d7f]" started-at="2025-08-30T17:29:12 IST" name="verifyAllAvailableMenuOptionsOnMenuPanel" description="Verify available menu options in the menu panel" data-provider="MenuListData" finished-at="2025-08-30T17:29:12 IST" depends-on-methods="testCases.TC0003_VerifyAvailableMenuOnMenuPanel.loginWithValidCredentials" duration-ms="146" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Performance]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllAvailableMenuOptionsOnMenuPanel -->
+        <test-method signature="verifyAllAvailableMenuOptionsOnMenuPanel(java.lang.String)[pri:2, instance:testCases.TC0003_VerifyAvailableMenuOnMenuPanel@5c671d7f]" started-at="2025-08-30T17:29:12 IST" name="verifyAllAvailableMenuOptionsOnMenuPanel" description="Verify available menu options in the menu panel" data-provider="MenuListData" finished-at="2025-08-30T17:29:12 IST" depends-on-methods="testCases.TC0003_VerifyAvailableMenuOnMenuPanel.loginWithValidCredentials" duration-ms="148" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dashboard]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllAvailableMenuOptionsOnMenuPanel -->
+        <test-method signature="verifyAllAvailableMenuOptionsOnMenuPanel(java.lang.String)[pri:2, instance:testCases.TC0003_VerifyAvailableMenuOnMenuPanel@5c671d7f]" started-at="2025-08-30T17:29:12 IST" name="verifyAllAvailableMenuOptionsOnMenuPanel" description="Verify available menu options in the menu panel" data-provider="MenuListData" finished-at="2025-08-30T17:29:12 IST" depends-on-methods="testCases.TC0003_VerifyAvailableMenuOnMenuPanel.loginWithValidCredentials" duration-ms="142" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Directory]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllAvailableMenuOptionsOnMenuPanel -->
+        <test-method signature="verifyAllAvailableMenuOptionsOnMenuPanel(java.lang.String)[pri:2, instance:testCases.TC0003_VerifyAvailableMenuOnMenuPanel@5c671d7f]" started-at="2025-08-30T17:29:13 IST" name="verifyAllAvailableMenuOptionsOnMenuPanel" description="Verify available menu options in the menu panel" data-provider="MenuListData" finished-at="2025-08-30T17:29:13 IST" depends-on-methods="testCases.TC0003_VerifyAvailableMenuOnMenuPanel.loginWithValidCredentials" duration-ms="108" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Maintenance]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllAvailableMenuOptionsOnMenuPanel -->
+        <test-method signature="verifyAllAvailableMenuOptionsOnMenuPanel(java.lang.String)[pri:2, instance:testCases.TC0003_VerifyAvailableMenuOnMenuPanel@5c671d7f]" started-at="2025-08-30T17:29:13 IST" name="verifyAllAvailableMenuOptionsOnMenuPanel" description="Verify available menu options in the menu panel" data-provider="MenuListData" finished-at="2025-08-30T17:29:13 IST" depends-on-methods="testCases.TC0003_VerifyAvailableMenuOnMenuPanel.loginWithValidCredentials" duration-ms="200" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Claima]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Menu option 'Claima' is not available in the menu panel.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Menu option 'Claima' is not available in the menu panel.
+at org.testng.Assert.fail(Assert.java:111)
+at testCases.TC0003_VerifyAvailableMenuOnMenuPanel.verifyAllAvailableMenuOptionsOnMenuPanel(TC0003_VerifyAvailableMenuOnMenuPanel.java:131)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllAvailableMenuOptionsOnMenuPanel -->
+        <test-method signature="verifyAllAvailableMenuOptionsOnMenuPanel(java.lang.String)[pri:2, instance:testCases.TC0003_VerifyAvailableMenuOnMenuPanel@5c671d7f]" started-at="2025-08-30T17:29:13 IST" name="verifyAllAvailableMenuOptionsOnMenuPanel" description="Verify available menu options in the menu panel" data-provider="MenuListData" finished-at="2025-08-30T17:29:13 IST" depends-on-methods="testCases.TC0003_VerifyAvailableMenuOnMenuPanel.loginWithValidCredentials" duration-ms="205" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Buzz]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllAvailableMenuOptionsOnMenuPanel -->
+        <test-method signature="verifySearchBoxFunctionality()[pri:3, instance:testCases.TC0003_VerifyAvailableMenuOnMenuPanel@5c671d7f]" started-at="2025-08-30T17:29:14 IST" name="verifySearchBoxFunctionality" description="Verify Search Box functionality in the menu panel" finished-at="2025-08-30T17:29:14 IST" depends-on-methods="testCases.TC0003_VerifyAvailableMenuOnMenuPanel.loginWithValidCredentials" duration-ms="198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchBoxFunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC0003_VerifyAvailableMenuOnMenuPanel@5c671d7f]" started-at="2025-08-30T17:29:14 IST" name="tearDown" finished-at="2025-08-30T17:29:16 IST" duration-ms="2320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC0003_VerifyAvailableMenuOnMenuPanel -->
+      <class name="testCases.TC0001_VerifyUIElementsOnLoginPage">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC0001_VerifyUIElementsOnLoginPage@445b295b]" started-at="2025-08-30T17:28:12 IST" name="setup" finished-at="2025-08-30T17:28:16 IST" duration-ms="4028" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLoginPageTitle()[pri:0, instance:testCases.TC0001_VerifyUIElementsOnLoginPage@445b295b]" started-at="2025-08-30T17:28:16 IST" name="verifyLoginPageTitle" description="Verify the title of the login page" finished-at="2025-08-30T17:28:16 IST" duration-ms="23" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPageTitle -->
+        <test-method signature="verifyLogoIsDisplayed()[pri:1, instance:testCases.TC0001_VerifyUIElementsOnLoginPage@445b295b]" started-at="2025-08-30T17:28:17 IST" name="verifyLogoIsDisplayed" description="Verify if the logo is displayed on the login page" finished-at="2025-08-30T17:28:17 IST" duration-ms="795" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogoIsDisplayed -->
+        <test-method signature="verifyUsernameLabelIsDisplayed()[pri:2, instance:testCases.TC0001_VerifyUIElementsOnLoginPage@445b295b]" started-at="2025-08-30T17:28:18 IST" name="verifyUsernameLabelIsDisplayed" description="Verify if the username label is displayed on the login page" finished-at="2025-08-30T17:28:18 IST" duration-ms="77" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUsernameLabelIsDisplayed -->
+        <test-method signature="verifyPasswordLabelIsDisplayed()[pri:3, instance:testCases.TC0001_VerifyUIElementsOnLoginPage@445b295b]" started-at="2025-08-30T17:28:18 IST" name="verifyPasswordLabelIsDisplayed" description="Verify if the password label is displayed on the login page" finished-at="2025-08-30T17:28:18 IST" duration-ms="60" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPasswordLabelIsDisplayed -->
+        <test-method signature="verifyLoginButtonIsDisplayed()[pri:4, instance:testCases.TC0001_VerifyUIElementsOnLoginPage@445b295b]" started-at="2025-08-30T17:28:18 IST" name="verifyLoginButtonIsDisplayed" description="Verify if the login button is displayed on the login page" finished-at="2025-08-30T17:28:18 IST" duration-ms="60" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginButtonIsDisplayed -->
+        <test-method signature="verifyForgotPasswordLinkIsDisplayed()[pri:5, instance:testCases.TC0001_VerifyUIElementsOnLoginPage@445b295b]" started-at="2025-08-30T17:28:18 IST" name="verifyForgotPasswordLinkIsDisplayed" description="Verify if the Forgot Password link is displayed on the login page" finished-at="2025-08-30T17:28:18 IST" duration-ms="57" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyForgotPasswordLinkIsDisplayed -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC0001_VerifyUIElementsOnLoginPage@445b295b]" started-at="2025-08-30T17:28:18 IST" name="tearDown" finished-at="2025-08-30T17:28:20 IST" duration-ms="2188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC0001_VerifyUIElementsOnLoginPage -->
+      <class name="testCases.TC0002_VerifyLoginFunctionality">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC0002_VerifyLoginFunctionality@49e5f737]" started-at="2025-08-30T17:28:20 IST" name="setup" finished-at="2025-08-30T17:28:25 IST" duration-ms="4163" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLoginFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC0002_VerifyLoginFunctionality@49e5f737]" started-at="2025-08-30T17:28:25 IST" name="verifyLoginFunctionality" description="Verify login functionality with valid and invalid credentials" data-provider="LoginData" finished-at="2025-08-30T17:28:30 IST" duration-ms="5002" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Valid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginFunctionality -->
+        <test-method signature="verifyLoginFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC0002_VerifyLoginFunctionality@49e5f737]" started-at="2025-08-30T17:28:30 IST" name="verifyLoginFunctionality" description="Verify login functionality with valid and invalid credentials" data-provider="LoginData" finished-at="2025-08-30T17:28:42 IST" duration-ms="12361" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginFunctionality -->
+        <test-method signature="verifyLoginFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC0002_VerifyLoginFunctionality@49e5f737]" started-at="2025-08-30T17:28:43 IST" name="verifyLoginFunctionality" description="Verify login functionality with valid and invalid credentials" data-provider="LoginData" finished-at="2025-08-30T17:28:55 IST" duration-ms="12404" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginFunctionality -->
+        <test-method signature="verifyErrorMessageIsDisplayed()[pri:1, instance:testCases.TC0002_VerifyLoginFunctionality@49e5f737]" started-at="2025-08-30T17:28:55 IST" name="verifyErrorMessageIsDisplayed" description="Verify Error message is displayed for invalid login credentials" finished-at="2025-08-30T17:28:58 IST" duration-ms="2563" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Error message mismatch. Expected: 'Invalid credentialsp', Found: 'Invalid credentials'.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Error message mismatch. Expected: 'Invalid credentialsp', Found: 'Invalid credentials'.
+at org.testng.Assert.fail(Assert.java:111)
+at testCases.TC0002_VerifyLoginFunctionality.verifyErrorMessageIsDisplayed(TC0002_VerifyLoginFunctionality.java:155)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyErrorMessageIsDisplayed -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC0002_VerifyLoginFunctionality@49e5f737]" started-at="2025-08-30T17:28:58 IST" name="tearDown" finished-at="2025-08-30T17:29:00 IST" duration-ms="2212" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC0002_VerifyLoginFunctionality -->
+      <class name="testCases.TC004_SearchUsersFunctionality">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC004_SearchUsersFunctionality@1757cd72]" started-at="2025-08-30T17:28:06 IST" name="setup" finished-at="2025-08-30T17:28:09 IST" duration-ms="3827" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="login()[pri:1, instance:testCases.TC004_SearchUsersFunctionality@1757cd72]" started-at="2025-08-30T17:28:09 IST" name="login" finished-at="2025-08-30T17:28:10 IST" duration-ms="468" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test failed due to exception: Keys to send should be a not null CharSequence]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test failed due to exception: Keys to send should be a not null CharSequence
+at org.testng.Assert.fail(Assert.java:111)
+at testCases.TC004_SearchUsersFunctionality.login(TC004_SearchUsersFunctionality.java:46)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="clickUserManagementMenu()[pri:2, instance:testCases.TC004_SearchUsersFunctionality@1757cd72]" started-at="2025-08-30T17:28:10 IST" name="clickUserManagementMenu" finished-at="2025-08-30T17:28:10 IST" depends-on-methods="testCases.TC004_SearchUsersFunctionality.login" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method testCases.TC004_SearchUsersFunctionality.clickUserManagementMenu() on instance testCases.TC004_SearchUsersFunctionality@1757cd72 depends on not successfully finished methods 
+[testCases.TC004_SearchUsersFunctionality.login() on instance testCases.TC004_SearchUsersFunctionality@1757cd72]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method testCases.TC004_SearchUsersFunctionality.clickUserManagementMenu() on instance testCases.TC004_SearchUsersFunctionality@1757cd72 depends on not successfully finished methods 
+[testCases.TC004_SearchUsersFunctionality.login() on instance testCases.TC004_SearchUsersFunctionality@1757cd72]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickUserManagementMenu -->
+        <test-method signature="testTableData()[pri:3, instance:testCases.TC004_SearchUsersFunctionality@1757cd72]" started-at="2025-08-30T17:28:10 IST" name="testTableData" finished-at="2025-08-30T17:28:10 IST" depends-on-methods="testCases.TC004_SearchUsersFunctionality.login, testCases.TC004_SearchUsersFunctionality.clickUserManagementMenu" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method testCases.TC004_SearchUsersFunctionality.testTableData() on instance testCases.TC004_SearchUsersFunctionality@1757cd72 depends on not successfully finished methods 
+[testCases.TC004_SearchUsersFunctionality.login() on instance testCases.TC004_SearchUsersFunctionality@1757cd72
+testCases.TC004_SearchUsersFunctionality.clickUserManagementMenu() on instance testCases.TC004_SearchUsersFunctionality@1757cd72]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method testCases.TC004_SearchUsersFunctionality.testTableData() on instance testCases.TC004_SearchUsersFunctionality@1757cd72 depends on not successfully finished methods 
+[testCases.TC004_SearchUsersFunctionality.login() on instance testCases.TC004_SearchUsersFunctionality@1757cd72
+testCases.TC004_SearchUsersFunctionality.clickUserManagementMenu() on instance testCases.TC004_SearchUsersFunctionality@1757cd72]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTableData -->
+        <test-method signature="validateSearchFunctionality()[pri:4, instance:testCases.TC004_SearchUsersFunctionality@1757cd72]" started-at="2025-08-30T17:28:10 IST" name="validateSearchFunctionality" finished-at="2025-08-30T17:28:10 IST" depends-on-methods="testCases.TC004_SearchUsersFunctionality.login, testCases.TC004_SearchUsersFunctionality.clickUserManagementMenu" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method testCases.TC004_SearchUsersFunctionality.validateSearchFunctionality() on instance testCases.TC004_SearchUsersFunctionality@1757cd72 depends on not successfully finished methods 
+[testCases.TC004_SearchUsersFunctionality.login() on instance testCases.TC004_SearchUsersFunctionality@1757cd72
+testCases.TC004_SearchUsersFunctionality.clickUserManagementMenu() on instance testCases.TC004_SearchUsersFunctionality@1757cd72]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method testCases.TC004_SearchUsersFunctionality.validateSearchFunctionality() on instance testCases.TC004_SearchUsersFunctionality@1757cd72 depends on not successfully finished methods 
+[testCases.TC004_SearchUsersFunctionality.login() on instance testCases.TC004_SearchUsersFunctionality@1757cd72
+testCases.TC004_SearchUsersFunctionality.clickUserManagementMenu() on instance testCases.TC004_SearchUsersFunctionality@1757cd72]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateSearchFunctionality -->
+        <test-method signature="validateClickOnAddbutton()[pri:5, instance:testCases.TC004_SearchUsersFunctionality@1757cd72]" started-at="2025-08-30T17:28:10 IST" name="validateClickOnAddbutton" finished-at="2025-08-30T17:28:10 IST" depends-on-methods="testCases.TC004_SearchUsersFunctionality.login, testCases.TC004_SearchUsersFunctionality.clickUserManagementMenu, testCases.TC004_SearchUsersFunctionality.validateSearchFunctionality" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method testCases.TC004_SearchUsersFunctionality.validateClickOnAddbutton() on instance testCases.TC004_SearchUsersFunctionality@1757cd72 depends on not successfully finished methods 
+[testCases.TC004_SearchUsersFunctionality.login() on instance testCases.TC004_SearchUsersFunctionality@1757cd72
+testCases.TC004_SearchUsersFunctionality.clickUserManagementMenu() on instance testCases.TC004_SearchUsersFunctionality@1757cd72
+testCases.TC004_SearchUsersFunctionality.validateSearchFunctionality() on instance testCases.TC004_SearchUsersFunctionality@1757cd72]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method testCases.TC004_SearchUsersFunctionality.validateClickOnAddbutton() on instance testCases.TC004_SearchUsersFunctionality@1757cd72 depends on not successfully finished methods 
+[testCases.TC004_SearchUsersFunctionality.login() on instance testCases.TC004_SearchUsersFunctionality@1757cd72
+testCases.TC004_SearchUsersFunctionality.clickUserManagementMenu() on instance testCases.TC004_SearchUsersFunctionality@1757cd72
+testCases.TC004_SearchUsersFunctionality.validateSearchFunctionality() on instance testCases.TC004_SearchUsersFunctionality@1757cd72]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateClickOnAddbutton -->
+        <test-method signature="validateAddUserFunctionality()[pri:6, instance:testCases.TC004_SearchUsersFunctionality@1757cd72]" started-at="2025-08-30T17:28:10 IST" name="validateAddUserFunctionality" finished-at="2025-08-30T17:28:10 IST" depends-on-methods="testCases.TC004_SearchUsersFunctionality.validateClickOnAddbutton, testCases.TC004_SearchUsersFunctionality.login, testCases.TC004_SearchUsersFunctionality.clickUserManagementMenu, testCases.TC004_SearchUsersFunctionality.validateSearchFunctionality" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method testCases.TC004_SearchUsersFunctionality.validateAddUserFunctionality() on instance testCases.TC004_SearchUsersFunctionality@1757cd72 depends on not successfully finished methods 
+[testCases.TC004_SearchUsersFunctionality.validateClickOnAddbutton() on instance testCases.TC004_SearchUsersFunctionality@1757cd72
+testCases.TC004_SearchUsersFunctionality.login() on instance testCases.TC004_SearchUsersFunctionality@1757cd72
+testCases.TC004_SearchUsersFunctionality.clickUserManagementMenu() on instance testCases.TC004_SearchUsersFunctionality@1757cd72
+testCases.TC004_SearchUsersFunctionality.validateSearchFunctionality() on instance testCases.TC004_SearchUsersFunctionality@1757cd72]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method testCases.TC004_SearchUsersFunctionality.validateAddUserFunctionality() on instance testCases.TC004_SearchUsersFunctionality@1757cd72 depends on not successfully finished methods 
+[testCases.TC004_SearchUsersFunctionality.validateClickOnAddbutton() on instance testCases.TC004_SearchUsersFunctionality@1757cd72
+testCases.TC004_SearchUsersFunctionality.login() on instance testCases.TC004_SearchUsersFunctionality@1757cd72
+testCases.TC004_SearchUsersFunctionality.clickUserManagementMenu() on instance testCases.TC004_SearchUsersFunctionality@1757cd72
+testCases.TC004_SearchUsersFunctionality.validateSearchFunctionality() on instance testCases.TC004_SearchUsersFunctionality@1757cd72]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAddUserFunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC004_SearchUsersFunctionality@1757cd72]" started-at="2025-08-30T17:28:10 IST" name="tearDown" finished-at="2025-08-30T17:28:12 IST" duration-ms="2190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC004_SearchUsersFunctionality -->
+      <class name="testCases.TC002_ValidateLoginFunctionality">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_ValidateLoginFunctionality@561b6512]" started-at="2025-08-30T17:27:22 IST" name="setup" finished-at="2025-08-30T17:27:27 IST" duration-ms="4577" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_ValidateLoginFunctionality@561b6512]" started-at="2025-08-30T17:27:27 IST" name="verifyLogin" data-provider="LoginData" finished-at="2025-08-30T17:27:32 IST" duration-ms="4700" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Valid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_ValidateLoginFunctionality@561b6512]" started-at="2025-08-30T17:27:32 IST" name="verifyLogin" data-provider="LoginData" finished-at="2025-08-30T17:27:44 IST" duration-ms="12355" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_ValidateLoginFunctionality@561b6512]" started-at="2025-08-30T17:27:44 IST" name="verifyLogin" data-provider="LoginData" finished-at="2025-08-30T17:27:56 IST" duration-ms="12146" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC002_ValidateLoginFunctionality@561b6512]" started-at="2025-08-30T17:27:56 IST" name="tearDown" finished-at="2025-08-30T17:27:59 IST" duration-ms="2202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC002_ValidateLoginFunctionality -->
     </test> <!-- chrometest -->
   </suite> <!-- Suite -->
 </testng-results>

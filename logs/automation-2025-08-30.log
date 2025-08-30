@@ -1,0 +1,73 @@
+17:28:55.455 [main] ERROR testCases.TC0002_VerifyLoginFunctionality - Checking error message with invalid credentials.
+17:28:55.460 [main] INFO  testCases.TC0002_VerifyLoginFunctionality - Error message displayed : Invalid credentials
+17:28:55.460 [main] INFO  testCases.TC0002_VerifyLoginFunctionality - ********** Finished TC002_ValidateLoginFunctionality : verifyLoginFunctionality ************
+17:28:55.604 [main] INFO  testCases.TC0002_VerifyLoginFunctionality - ********** Starting TC002_ValidateLoginFunctionality : verifyErrorMessageIsDisplayed ************
+17:28:56.013 [main] INFO  testCases.TC0002_VerifyLoginFunctionality - Entering username:- invalidUser
+17:28:56.667 [main] INFO  testCases.TC0002_VerifyLoginFunctionality - Entering password:- invalidPass
+17:28:56.881 [main] INFO  testCases.TC0002_VerifyLoginFunctionality - Clicking on Login button.
+17:28:58.163 [main] INFO  testCases.TC0002_VerifyLoginFunctionality - Checking error message for invalid credentials.
+17:28:58.163 [main] ERROR testCases.TC0002_VerifyLoginFunctionality - Error message did not match. Expected: 'Invalid credentialsp' Found: Invalid credentials
+17:29:06.473 [main] INFO  testCases.TC0003_VerifyAvailableMenuOnMenuPanel - ******* Started: TC0003_VerifyMenuPanel : loginWithValidCredentials *********
+17:29:06.476 [main] INFO  testCases.TC0003_VerifyAvailableMenuOnMenuPanel - Logging in with valid credentials...
+17:29:06.476 [main] INFO  testCases.TC0003_VerifyAvailableMenuOnMenuPanel - Entering username: Admin
+17:29:07.440 [main] INFO  testCases.TC0003_VerifyAvailableMenuOnMenuPanel - Entering password: admin123
+17:29:07.667 [main] INFO  testCases.TC0003_VerifyAvailableMenuOnMenuPanel - Clicking the login button...
+17:29:09.334 [main] INFO  testCases.TC0003_VerifyAvailableMenuOnMenuPanel - Login successful: Time at Work is displayed.
+17:29:09.335 [main] INFO  testCases.TC0003_VerifyAvailableMenuOnMenuPanel - Login successful and Time at Work is displayed.
+17:29:09.335 [main] INFO  testCases.TC0003_VerifyAvailableMenuOnMenuPanel - ******* Finished: TC0003_VerifyMenuPanel : loginWithValidCredentials *********
+17:29:09.700 [main] INFO  testCases.TC0003_VerifyAvailableMenuOnMenuPanel - ******* Started: TC0003_VerifyMenuPanel : verifyLogoOnMenuPanel *********
+17:29:09.701 [main] INFO  testCases.TC0003_VerifyAvailableMenuOnMenuPanel - Verifying if the logo is displayed on the menu panel...
+17:29:09.792 [main] INFO  testCases.TC0003_VerifyAvailableMenuOnMenuPanel - Logo is displayed on the menu panel.
+17:29:09.792 [main] INFO  testCases.TC0003_VerifyAvailableMenuOnMenuPanel - Logo on menu panel verified successfully.
+17:29:09.792 [main] INFO  testCases.TC0003_VerifyAvailableMenuOnMenuPanel - ******* Finished: TC0003_VerifyMenuPanel : verifyLogoOnMenuPanel *********
+17:29:10.025 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+17:29:10.026 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+17:29:10.053 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+17:29:10.054 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+17:29:10.081 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+17:29:10.083 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+17:29:10.106 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+17:29:10.107 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+17:29:10.129 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+17:29:10.131 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+17:29:10.159 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+17:29:10.162 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+17:29:10.186 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+17:29:10.191 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+17:29:10.216 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+17:29:10.217 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+17:29:10.238 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+17:29:10.241 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+17:29:10.269 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+17:29:10.270 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+17:29:10.297 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+17:29:10.299 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+17:29:10.319 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+17:29:10.320 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+17:29:10.348 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+17:29:10.349 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+17:29:10.372 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+17:29:10.373 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+17:29:10.392 [main] INFO  testCases.TC0003_VerifyAvailableMenuOnMenuPanel - ******* Started: TC0003_VerifyMenuPanel : verifyAllAvailableMenuOptionsOnMenuPanel *********
+17:29:10.443 [main] INFO  testCases.TC0003_VerifyAvailableMenuOnMenuPanel - Verifying if the menu option 'Admin' is displayed in the menu panel...
+17:29:10.444 [main] INFO  testCases.TC0003_VerifyAvailableMenuOnMenuPanel - Menu option 'Admin' is available in the menu panel.
+17:29:10.446 [main] INFO  testCases.TC0003_VerifyAvailableMenuOnMenuPanel - ******* Finished: TC0003_VerifyMenuPanel : verifyAllAvailableMenuOptionsOnMenuPanel *********
+17:29:10.707 [main] INFO  testCases.TC0003_VerifyAvailableMenuOnMenuPanel - ******* Started: TC0003_VerifyMenuPanel : verifyAllAvailableMenuOptionsOnMenuPanel *********
+17:29:10.770 [main] INFO  testCases.TC0003_VerifyAvailableMenuOnMenuPanel - Verifying if the menu option 'PIM' is displayed in the menu panel...
+17:29:10.770 [main] INFO  testCases.TC0003_VerifyAvailableMenuOnMenuPanel - Menu option 'PIM' is available in the menu panel.
+17:29:10.770 [main] INFO  testCases.TC0003_VerifyAvailableMenuOnMenuPanel - ******* Finished: TC0003_VerifyMenuPanel : verifyAllAvailableMenuOptionsOnMenuPanel *********
+17:29:10.998 [main] INFO  testCases.TC0003_VerifyAvailableMenuOnMenuPanel - ******* Started: TC0003_VerifyMenuPanel : verifyAllAvailableMenuOptionsOnMenuPanel *********
+17:29:11.240 [main] INFO  testCases.TC0003_VerifyAvailableMenuOnMenuPanel - Verifying if the menu option 'Leavea' is displayed in the menu panel...
+17:29:11.240 [main] ERROR testCases.TC0003_VerifyAvailableMenuOnMenuPanel - Menu option 'Leavea' is not available in the menu panel.
+17:29:11.484 [main] INFO  testCases.TC0003_VerifyAvailableMenuOnMenuPanel - ******* Started: TC0003_VerifyMenuPanel : verifyAllAvailableMenuOptionsOnMenuPanel *********
+17:29:11.568 [main] INFO  testCases.TC0003_VerifyAvailableMenuOnMenuPanel - Verifying if the menu option 'Time' is displayed in the menu panel...
+17:29:11.569 [main] INFO  testCases.TC0003_VerifyAvailableMenuOnMenuPanel - Menu option 'Time' is available in the menu panel.
+17:29:11.569 [main] INFO  testCases.TC0003_VerifyAvailableMenuOnMenuPanel - ******* Finished: TC0003_VerifyMenuPanel : verifyAllAvailableMenuOptionsOnMenuPanel *********
+17:29:11.741 [main] INFO  testCases.TC0003_VerifyAvailableMenuOnMenuPanel - ******* Started: TC0003_VerifyMenuPanel : verifyAllAvailableMenuOptionsOnMenuPanel *********
+17:29:11.822 [main] INFO  testCases.TC0003_VerifyAvailableMenuOnMenuPanel - Verifying if the menu option 'Recruitment' is displayed in the menu panel...
+17:29:11.822 [main] INFO  testCases.TC0003_VerifyAvailableMenuOnMenuPanel - Menu option 'Recruitment' is available in the menu panel.
+17:29:11.822 [main] INFO  testCases.TC0003_VerifyAvailableMenuOnMenuPanel - ******* Finished: TC0003_VerifyMenuPanel : verifyAllAvailableMenuOptionsOnMenuPanel *********
+17:29:11.983 [main] INFO  testCases.TC0003_VerifyAvailableMenuOnMenuPanel - ******* Started: TC0003_VerifyMenuPanel : verifyAllAvailableMenuOptionsOnMenuPanel *********
+17:29:12.069 [main] INFO  testCases.TC0003_VerifyAvailableMenuOnMenuPanel - Verifying if the menu option 'My Info' is displayed in the menu panel...
+17:29:12.069 [main] INFO  testCases.TC0003_VerifyAvailableMenuOnMenuPanel - Menu option 'My Info' is available in the menu panel.
+17:29:12.069 [main] INFO  testCases.TC0003_VerifyAvailableMenuOnMenuPanel - ******* Finished: TC0003_VerifyMenuPanel : verifyAllAvailableMenuOptionsOnMenuPanel *********

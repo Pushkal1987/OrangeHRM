@@ -8,13 +8,14 @@
   	  	<parameter name="os" value="Windows"/>
 	  	<parameter name="browser" value="chrome"/>
 	    <classes>
-	      	<!--<class name="testCases.TC001_ValidateHomePage"/>
+	   		<class name="testCases.TestCaseWithStepsAlongWithScreenshotsInExtentReport"/>
+			<class name="testCases.TC001_ValidateHomePage"/>
 	      	<class name="testCases.TC002_ValidateLoginFunctionality"/>
 	      	<class name="testCases.TC003_ValidateAdminMainPage"/> 
 	      	<class name="testCases.TC004_SearchUsersFunctionality"/> 
 	      	<class name="testCases.TC0001_VerifyUIElementsOnLoginPage"/>
-	      	<class name="testCases.TC0002_VerifyLoginFunctionality"/>-->
-	      	<class name="testCases.TC0003_VerifyMenuPanel"/>
+	      	<class name="testCases.TC0002_VerifyLoginFunctionality"/>
+	      	<class name="testCases.TC0003_VerifyAvailableMenuOnMenuPanel"/> 
 	    </classes>
   	</test> 
 </suite> 

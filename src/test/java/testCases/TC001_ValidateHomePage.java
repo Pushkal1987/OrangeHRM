@@ -14,7 +14,7 @@ public class TC001_ValidateHomePage extends BaseClass{
 		
 		try
 		{
-			String title = driver.getTitle();
+			String title = getDriver().getTitle();
 			System.out.println("Page title is: "+title);
 			logger.info("Page title is: " + title);
 			
@@ -47,7 +47,7 @@ public class TC001_ValidateHomePage extends BaseClass{
 		logger.info("******* Started: TC001_ValidateTitleOfThePage : verifyLogo *********");
 		try 
 		{
-			LoginPage hp = new LoginPage(driver);
+			LoginPage hp = new LoginPage(getDriver());
 			boolean logo =hp.isLogoDisplayed();
 			
 			if(logo==true)

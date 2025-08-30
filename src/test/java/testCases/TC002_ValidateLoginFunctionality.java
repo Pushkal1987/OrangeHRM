@@ -16,8 +16,8 @@ public class TC002_ValidateLoginFunctionality extends BaseClass{
 		
 		try 
 		{
-			driver.navigate().refresh();
-			LoginPage lp = new LoginPage(driver);
+			getDriver().navigate().refresh();
+			LoginPage lp = new LoginPage(getDriver());
 			logger.info("Entering username: " + user);
 			lp.enterUsername(user);
 			logger.info("Entering password. "+ pwd);
@@ -25,7 +25,7 @@ public class TC002_ValidateLoginFunctionality extends BaseClass{
 			logger.info("Clicking on Login button.");
 			lp.clickLogin();
 						
-			DashboardPage dp = new 	DashboardPage(driver);	
+			DashboardPage dp = new 	DashboardPage(getDriver());	
 			logger.info("Checking if Dashboard is loaded...");
 			boolean targetPage = dp.isTimeAtWorkExist();
 			

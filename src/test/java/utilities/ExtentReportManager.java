@@ -31,10 +31,12 @@ import testBase.BaseClass;
 
 public class ExtentReportManager implements ITestListener 
 {
-
-    public static ExtentReports extent;
+	public static ExtentReports extent;
+	// ThreadLocal is typically used in parallel test execution frameworks (like TestNG + Extent Reports) to ensure that each test thread gets its own copy of ExtentTest object without interfering with others.
+	private static ThreadLocal<ExtentTest> test = new ThreadLocal<>();  	// For Thread Safe in Parallel Execution
+	 
     private ExtentSparkReporter sparkReporter;
-    private ExtentTest test;
+    //private ExtentTest test;
     private String reportName;
     public String timeStamp;
     private Map<String, List<ITestResult>> sortedResults = new TreeMap<>(); // TreeMap keeps order
@@ -103,7 +105,8 @@ public class ExtentReportManager implements ITestListener
     {        
     	String methodName = result.getMethod().getMethodName();
     	logTest(result, Status.PASS, MarkupHelper.createLabel(methodName + ", EXECUTED SUCCESSFULLY ✅", ExtentColor.GREEN));
-        test.log(Status.INFO, "Test passed successfully.");
+        //test.log(Status.INFO, "Test passed successfully.");
+    	test.get().log(Status.INFO, "Test passed successfully.");
         
         try 
         {
@@ -111,7 +114,7 @@ public class ExtentReportManager implements ITestListener
 	        String base64Screenshot = new BaseClass().captureScreenAsBase64();
 	
 	        // Attach Base64 screenshot to Extent Report
-	        test.addScreenCaptureFromBase64String(base64Screenshot,"Screenshot: " + result.getMethod().getMethodName());
+	        test.get().addScreenCaptureFromBase64String(base64Screenshot,"Screenshot: " + result.getMethod().getMethodName());
 		} catch (Exception e) {
 			System.err.println("Error while capturing screenshot: " + e.getMessage());
 			e.printStackTrace();
@@ -124,7 +127,7 @@ public class ExtentReportManager implements ITestListener
     {
     	String methodName = result.getMethod().getMethodName();
         logTest(result, Status.FAIL, MarkupHelper.createLabel( methodName + ", FAILED ❌" , ExtentColor.RED));
-        test.log(Status.INFO, result.getThrowable().getMessage());
+        test.get().log(Status.INFO, result.getThrowable().getMessage());
         
         try 
         {
@@ -138,7 +141,7 @@ public class ExtentReportManager implements ITestListener
             String base64Screenshot = new BaseClass().captureScreenAsBase64();
 
             // Attach Base64 screenshot to Extent Report
-            test.addScreenCaptureFromBase64String(base64Screenshot,"Screenshot: " + result.getMethod().getMethodName());
+            test.get().addScreenCaptureFromBase64String(base64Screenshot,"Screenshot: " + result.getMethod().getMethodName());
         } /*catch (IOException e) 
         {
             // Use this exception if we want to capture screenshot and save it in a file
@@ -160,7 +163,7 @@ public class ExtentReportManager implements ITestListener
         
         String methodName = result.getMethod().getMethodName();
         logTest(result, Status.SKIP, MarkupHelper.createLabel(methodName + ", SKIPPED ⚠️" , ExtentColor.ORANGE));
-        test.log(Status.INFO, skipMessage);
+        test.get().log(Status.INFO, skipMessage);
     }
   
     // This method will be called automatically on test case Finished
@@ -209,13 +212,13 @@ public class ExtentReportManager implements ITestListener
         sortedResults.computeIfAbsent(testCaseId, k -> new ArrayList<>()).add(result);
 
         // Normal Extent logging
-        test = extent.createTest(className +" : "+ methodName);
-        test.assignCategory(className);
+        test.set(extent.createTest(methodName));
+        test.get().assignCategory(className);
         if (result.getMethod().getGroups().length > 0) 
         {
-            test.assignCategory(result.getMethod().getGroups());
+            test.get().assignCategory(result.getMethod().getGroups());
         }
-        test.log(status, markup);
+        test.get().log(status, markup);
                 
         /*// OR Send email automatically to the attached email
         try 
@@ -259,5 +262,18 @@ public class ExtentReportManager implements ITestListener
         {
             e.printStackTrace();
         } */     
+    }
+    
+    // This method logs a step with an attached screenshot in Base64 format
+    public static void logStepWithScreenshot(ExtentTest test, String message) {
+        test.log(Status.INFO, message);
+        try 
+        {
+            String base64Screenshot = new BaseClass().captureScreenAsBase64();
+            test.addScreenCaptureFromBase64String(base64Screenshot, "Screenshot for: " + message);
+        } catch (Exception e) 
+        {
+            test.log(Status.WARNING, "Screenshot capture failed: " + e.getMessage());
+        }
     }
 }

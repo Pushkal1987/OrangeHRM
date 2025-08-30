@@ -27,7 +27,7 @@ public class TC0001_VerifyUIElementsOnLoginPage extends BaseClass
 		{		
 			// Load expected title from properties file
 			String expectedTitle = p.getProperty("expectedTitle"); 
-			String actualTitle = driver.getTitle();
+			String actualTitle = getDriver().getTitle();
 			logger.info("Expected title is: " + expectedTitle + ", Actual title is: " + actualTitle);
 			// Check if the actual title matches the expected title
 			logger.info("Verifying the login page title...");
@@ -66,7 +66,7 @@ public class TC0001_VerifyUIElementsOnLoginPage extends BaseClass
 
 		try 
 		{
-			LoginPage loginPage = new LoginPage(driver);
+			LoginPage loginPage = new LoginPage(getDriver());
 			boolean isLogoDisplayed = loginPage.isLogoDisplayed();
 			// Check if the logo is displayed
 			logger.info("Checking if logo is displayed...");
@@ -99,7 +99,7 @@ public class TC0001_VerifyUIElementsOnLoginPage extends BaseClass
 
 		try 
 		{
-			LoginPage loginPage = new LoginPage(driver);
+			LoginPage loginPage = new LoginPage(getDriver());
 			boolean isUsernameLabelDisplayed = loginPage.isUsernameLabelDisplayed();
 			// Check if the username label is displayed
 			logger.info("Checking if username label is displayed...");
@@ -132,7 +132,7 @@ public class TC0001_VerifyUIElementsOnLoginPage extends BaseClass
 
 		try 
 		{
-			LoginPage loginPage = new LoginPage(driver);
+			LoginPage loginPage = new LoginPage(getDriver());
 			boolean isPasswordLabelDisplayed = loginPage.isPasswordLabelDisplayed();
 			// Check if the password label is displayed
 			logger.info("Checking if password label is displayed...");
@@ -164,7 +164,7 @@ public class TC0001_VerifyUIElementsOnLoginPage extends BaseClass
 
 		try 
 		{
-			LoginPage loginPage = new LoginPage(driver);
+			LoginPage loginPage = new LoginPage(getDriver());
 			boolean isLoginButtonDisplayed = loginPage.isLoginButtonDisplayed();
 			// Check if the login button is displayed
 			logger.info("Checking if login button is displayed...");
@@ -198,7 +198,7 @@ public class TC0001_VerifyUIElementsOnLoginPage extends BaseClass
 
 		try 
 		{
-			LoginPage loginPage = new LoginPage(driver);
+			LoginPage loginPage = new LoginPage(getDriver());
 			boolean isForgotPasswordLinkDisplayed = loginPage.isForgotPasswordLinkDisplayed();
 			// Check if the Forgot Password link is displayed
 			logger.info("Checking if Forgot Password link is displayed...");

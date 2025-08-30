@@ -1,7 +1,6 @@
 package testBase;
 
 import java.io.FileInputStream;
-import java.io.IOException;
 import java.time.Duration;
 import java.util.NoSuchElementException;
 import java.util.Properties;
@@ -25,49 +24,60 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
+
 public class BaseClass {
 	
-	public static WebDriver driver;
+	//public static WebDriver driver;
+	
+	// ThreadLoal ensures that each test thread has its own independent WebDriver instance, preventing browser/session mix-ups during parallel execution.
+	protected static ThreadLocal<WebDriver> driver = new ThreadLocal<>();   // For Thread Safe in Parallel Execution
 	public Logger logger;
 	public Properties p;
+	String reportName = "TestEvidence_TC0003.docx";
+	
+	public WebDriver getDriver() {
+        return driver.get();
+    }
 	
 	@BeforeClass
 	@Parameters({"os","browser"})
-	public void setup(String os, String br) throws IOException
+	public void setup(String os, String br) throws Exception
 	{
+        
 		//Loading config.properties file
 		FileInputStream file = new FileInputStream("./src/test/resources/config.properties");   
 		//or FileReader file = new FileReader("./src/test/resources/config.properties");
 		p = new Properties();
 		p.load(file);
 				
-		logger=LogManager.getLogger(this.getClass());    //we pass the current class by using this.getClass()
+		logger = LogManager.getLogger(this.getClass());    //we pass the current class by using this.getClass()
 		
 		//For Headless Testing
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--headless=new");
 				
 		//WebDriverManager.chromedriver().setup();
-		
+		WebDriver drv;
 		switch(br.toLowerCase())
 		{
-			case "chrome" : driver=new ChromeDriver(); break;		// Add options in ChromeDriver(options) for headless testing
-			case "edge" : driver=new EdgeDriver(); break;
-			case "firefox" : driver=new FirefoxDriver(); break;
+			case "chrome" : drv = new ChromeDriver(); break;		// Add options in ChromeDriver(options) for headless testing
+			case "edge" : drv = new EdgeDriver(); break;
+			case "firefox" : drv = new FirefoxDriver(); break;
 			default : System.out.println("Invalid browser name...."); return;
 		}
+		driver.set(drv);
 		
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.manage().deleteAllCookies();
-		driver.get(p.getProperty("appURL"));   //Reading url from properties file
-		driver.manage().window().maximize();
+		driver.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.get().manage().deleteAllCookies();
+		driver.get().get(p.getProperty("appURL"));   //Reading url from properties file
+		driver.get().manage().window().maximize();
 	}
 	
 	@AfterClass
 	public void tearDown() throws InterruptedException
 	{
 		Thread.sleep(2000);
-		driver.close();
+		driver.get().close();
 	}
 			
 	/*public String captureScreen(String className, String methodName) throws IOException
@@ -89,7 +99,7 @@ public class BaseClass {
 	// Capture screenshot as Base64
     public String captureScreenAsBase64() 
     {  
-    	TakesScreenshot ts = (TakesScreenshot) driver;
+    	TakesScreenshot ts = (TakesScreenshot) driver.get();
     	String base64Screenshot = ts.getScreenshotAs(OutputType.BASE64);
     	
         return base64Screenshot;
@@ -99,8 +109,8 @@ public class BaseClass {
 	//public int timeoutSeconds =10;
     
     public void scrollUntilElementNotDisplayed(WebElement element, int timeoutSeconds) {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutSeconds));
+        JavascriptExecutor js = (JavascriptExecutor) driver.get();
+        WebDriverWait wait = new WebDriverWait(driver.get(), Duration.ofSeconds(timeoutSeconds));
 
         try {
             wait.until(driver1 -> {

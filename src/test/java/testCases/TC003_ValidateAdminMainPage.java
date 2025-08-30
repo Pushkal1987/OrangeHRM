@@ -18,7 +18,7 @@ public class TC003_ValidateAdminMainPage extends BaseClass{
 		boolean isLoginSuccessful = false;
 		try
 		{
-			LoginPage lp = 	new LoginPage(driver);
+			LoginPage lp = 	new LoginPage(getDriver());
 			String username = p.getProperty("username");	// get username data from properties file
 			String password = p.getProperty("password");	// get password data from properties file
 			logger.info("Entering username: " + username);
@@ -32,7 +32,7 @@ public class TC003_ValidateAdminMainPage extends BaseClass{
 			
 			
 			//Add a verification step to confirm login
-	        DashboardPage dp = new DashboardPage(driver);
+	        DashboardPage dp = new DashboardPage(getDriver());
 	        isLoginSuccessful = dp.isTimeAtWorkExist(); // some element visible only after successful login
 	        
 	        if (isLoginSuccessful) 
@@ -58,7 +58,7 @@ public class TC003_ValidateAdminMainPage extends BaseClass{
 		logger.info("******* Started: TC003_ValidateAdminMainPage : clickAdminMenu *********");
 		try
 		{
-			DashboardPage dp = new DashboardPage(driver);
+			DashboardPage dp = new DashboardPage(getDriver());
 			logger.info("Clicked Admin menu successfully.");
 			dp.menuSelection("Admin");			// Select Admin menu in menu panel
 		} catch (Exception e) {
@@ -74,7 +74,7 @@ public class TC003_ValidateAdminMainPage extends BaseClass{
 		logger.info("******* Started: TC003_ValidateAdminMainPage : verifySystemUser *********");
 		try 
 		{
-			AdminUserManagementPage ap = new AdminUserManagementPage(driver);
+			AdminUserManagementPage ap = new AdminUserManagementPage(getDriver());
 			boolean systemUser= ap.systemUserIsDisplayed();
 			
 			if(systemUser)
